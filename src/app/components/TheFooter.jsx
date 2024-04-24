@@ -40,7 +40,7 @@ export default function TheFooter() {
               <MdEmail />
               <a
                 className="text-base"
-                href="mailto:office@clutchindustries.com"
+                href="mailto:sales@clutchbowling.com"
                 target="_blank"
               >
                 sales@clutchbowling.com
