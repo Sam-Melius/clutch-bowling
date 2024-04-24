@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
-import { navItemsArray } from "./data/NavItems";
+import { desktopNavArray } from "./data/NavItems";
 
 export default function TheHeader() {
   return (
@@ -11,7 +11,7 @@ export default function TheHeader() {
         </Link>
 
         <div className="hidden lg:flex flex-row items-center justify-center gap-8 lg:w-3/5 max-w-fit">
-          {navItemsArray.map((item, index) => (
+          {desktopNavArray.map((item, index) => (
             <Link key={index} href={item.linkTo}>
               {item.text}
             </Link>

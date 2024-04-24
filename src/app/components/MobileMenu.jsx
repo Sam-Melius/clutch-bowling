@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
-import { navItemsArray } from "./data/NavItems";
+import { mobileNavArray } from "./data/NavItems";
 
 export default function MobileMenu() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -51,7 +51,7 @@ export default function MobileMenu() {
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 bg-black text-white font-medium uppercase bg-opacity-95 z-[9000] animate__animated animate__slideInDown">
           <div className="flex flex-col h-full justify-center space-y-12 items-center text-xl">
-            {navItemsArray.map((item, index) => (
+            {mobileNavArray.map((item, index) => (
               <Link key={index} href={item.linkTo} onClick={toggleMobileMenu}>
                 {item.text}
               </Link>

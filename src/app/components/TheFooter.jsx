@@ -22,7 +22,7 @@ export default function TheFooter() {
             <div className="flex flex-row items-start gap-3">
               <FaLocationDot className="mt-1" />
               <a
-                href="https://maps.app.goo.gl/T4G1YyNEN6DVYq7d9"
+                href="https://maps.app.goo.gl/zoq8vx7NMeZvhW6D7"
                 target="_blank"
                 className="text-base"
               >
@@ -68,9 +68,7 @@ export default function TheFooter() {
         </div>
 
         <div className="flex flex-col gap-y-3 col-span-1 lg:mx-auto">
-          <p className="text-xl font-medium uppercase text-clutchBlue-300">
-            Who We Are
-          </p>
+          <p className="text-xl font-medium uppercase">Who We Are</p>
           <ul className="flex flex-col gap-2">
             {/* {whoWeAreArray.map((item, index) => (
               <li key={index}>
@@ -96,9 +94,7 @@ export default function TheFooter() {
         </div>
 
         <div className="flex flex-col gap-y-3 col-span-2 lg:col-span-1 lg:mx-auto">
-          <p className="text-xl font-medium uppercase text-clutchBlue-300">
-            Our Projects
-          </p>
+          <p className="text-xl font-medium uppercase">Our Projects</p>
           <ul className="flex flex-col gap-2">
             {/* {ourProjectsArray.map((item, index) => (
               <li key={index}>

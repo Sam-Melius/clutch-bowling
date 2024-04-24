@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import "animate.css";
 import "./globals.css";
 import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
