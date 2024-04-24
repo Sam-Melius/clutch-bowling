@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main-bg-color: black;
+  --main-text-color: white;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
 main {
   display: flex;
   flex-direction: column;
