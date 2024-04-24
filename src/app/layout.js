@@ -1,10 +1,22 @@
-import { Inter } from "next/font/google";
+import { Blinker, Barlow } from "next/font/google";
 import "animate.css";
 import "./globals.css";
 import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
 
-const inter = Inter({ subsets: ["latin"] });
+const blinker = Blinker({
+  weight: ["100", "200", "300", "400", "600", "700", "800", "900"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const barlow = Barlow({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Clutch Bowling",
@@ -15,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`min-h-svh flex flex-col mx-auto relative ${inter.className}`}
+        className={`min-h-svh flex flex-col mx-auto relative ${blinker.className}`}
       >
         <TheHeader />
         {children}

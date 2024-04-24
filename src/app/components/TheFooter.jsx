@@ -8,6 +8,8 @@ import {
 } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Image from "next/image";
+import clutchLogo from "../../../public/logos/clutch-logo-white.png";
 
 export default function TheFooter() {
   return (
@@ -17,7 +19,13 @@ export default function TheFooter() {
     >
       <div className="grid gap-12 lg:gap-x-0 lg:gap-y-12 grid-cols-2 lg:grid-cols-4 w-fit lg:w-full mx-auto">
         <div className="flex flex-col gap-10 justify-between col-span-2 lg:col-span-1">
-          <Link href="/">Logo</Link>
+          <Link href="/">
+            <Image
+              src={clutchLogo}
+              alt="Clutch Bowling"
+              className="w-full h-auto"
+            />
+          </Link>
           <div className="flex flex-col gap-4 text-xl">
             <div className="flex flex-row items-start gap-3">
               <FaLocationDot className="mt-1" />
