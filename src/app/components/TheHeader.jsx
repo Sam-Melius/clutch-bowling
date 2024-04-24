@@ -6,13 +6,13 @@ import clutchLogo from "../../../public/logos/clutch-logo-white.png";
 
 export default function TheHeader() {
   return (
-    <header className="flex flex-row w-full z-50 bg-black text-white">
+    <header className="absolute top-0 flex flex-row w-full z-50 text-white">
       <nav className="flex flex-row w-full h-fit lg:items-center justify-between m-5">
         <Link href="/" className="lg:w-1/5 flex-grow">
           <Image
             src={clutchLogo}
             alt="Clutch Bowling"
-            className="w-[300px] h-auto"
+            className="w-[250px] md:w-[300px] h-auto"
           />
         </Link>
 

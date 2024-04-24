@@ -1,4 +1,4 @@
-import { Blinker, Barlow } from "next/font/google";
+import { Blinker } from "next/font/google";
 import "animate.css";
 import "./globals.css";
 import TheHeader from "./components/TheHeader";
@@ -6,13 +6,6 @@ import TheFooter from "./components/TheFooter";
 
 const blinker = Blinker({
   weight: ["100", "200", "300", "400", "600", "700", "800", "900"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const barlow = Barlow({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
