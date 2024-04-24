@@ -1,0 +1,26 @@
+export const navItemsArray = [
+  {
+    text: "Home",
+    linkTo: "/",
+  },
+  {
+    text: "About",
+    linkTo: "/about",
+  },
+  {
+    text: "Pricing",
+    linkTo: "/pricing",
+  },
+  {
+    text: "FAQ",
+    linkTo: "/faq",
+  },
+  {
+    text: "Patch Notes",
+    linkTo: "/patch-notes",
+  },
+  {
+    text: "Contact",
+    linkTo: "/contact",
+  },
+];
