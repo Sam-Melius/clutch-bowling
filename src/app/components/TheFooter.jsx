@@ -15,11 +15,11 @@ export default function TheFooter() {
   return (
     <footer
       id="footer"
-      className="flex-shrink-0 justify-between px-5 lg:px-10 pt-12 lg:pt-14 pb-4 w-full bg-black text-white h-fit"
+      className="flex-shrink-0 justify-between px-5 lg:px-10 pt-12 lg:pt-14 pb-4 w-full h-fit"
     >
       <div className="grid gap-y-12 grid-cols-1 lg:grid-cols-3 w-fit lg:w-full mx-auto">
         <div className="flex flex-col col-span-full lg:col-span-1">
-          <Link href="/">
+          <Link href="/" className="w-[300px]">
             <Image
               src={clutchLogo}
               alt="Clutch Bowling"
@@ -29,15 +29,40 @@ export default function TheFooter() {
         </div>
 
         <ul className="flex flex-col gap-y-5 col-span-1 lg:mx-auto">
-          <Link href="/about">About</Link>
-          <Link href="/pricing">Pricing</Link>
-          <Link href="/FAQ">FAQs</Link>
-          <Link href="/patch-notes">Patch Notes</Link>
-          <Link href="/contact">Contact</Link>
+          <Link
+            href="/about"
+            className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
+          >
+            About
+          </Link>
+          <Link
+            href="/pricing"
+            className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
+          >
+            Pricing
+          </Link>
+          <Link
+            href="/FAQ"
+            className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
+          >
+            FAQs
+          </Link>
+          <Link
+            href="/patch-notes"
+            className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
+          >
+            Patch Notes
+          </Link>
+          <Link
+            href="/contact"
+            className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
+          >
+            Contact
+          </Link>
         </ul>
 
         <div className="flex flex-col gap-y-5 col-span-full lg:col-span-1 lg:mx-auto text-xl">
-          <div className="flex flex-row items-start gap-3">
+          <div className="flex flex-row items-start gap-3 hover:text-clutchBlue-300">
             <FaLocationDot className="mt-1" />
             <a
               href="https://maps.app.goo.gl/zoq8vx7NMeZvhW6D7"
@@ -48,13 +73,13 @@ export default function TheFooter() {
               Salem, OR 97301
             </a>
           </div>
-          <div className="flex flex-row items-center gap-3">
+          <div className="flex flex-row items-center gap-3 hover:text-clutchBlue-300">
             <FaPhone />
             <a className="text-base" href="tel:+15039675228" target="_blank">
               503-779-7796
             </a>
           </div>
-          <div className="flex flex-row items-center gap-3">
+          <div className="flex flex-row items-center gap-3 hover:text-clutchBlue-300">
             <MdEmail />
             <a
               className="text-base"
@@ -68,16 +93,29 @@ export default function TheFooter() {
             <a
               href="https://www.linkedin.com/company/clutchbowling/"
               target="_blank"
+              className="hover:text-clutchBlue-300"
             >
               <FaLinkedin />
             </a>
-            <a href="https://www.facebook.com/clutchbowling" target="_blank">
+            <a
+              href="https://www.facebook.com/clutchbowling"
+              target="_blank"
+              className="hover:text-clutchBlue-300"
+            >
               <FaFacebook />
             </a>
-            <a href="https://twitter.com/ClutchBowling" target="_blank">
+            <a
+              href="https://twitter.com/ClutchBowling"
+              target="_blank"
+              className="hover:text-clutchBlue-300"
+            >
               <FaTwitter />
             </a>
-            <a href="https://www.instagram.com/clutchbowling/" target="_blank">
+            <a
+              href="https://www.instagram.com/clutchbowling/"
+              target="_blank"
+              className="hover:text-clutchBlue-300"
+            >
               <FaInstagram />
             </a>
           </div>
