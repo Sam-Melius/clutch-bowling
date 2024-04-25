@@ -34,13 +34,6 @@ export default function TheHeader() {
           href="/"
           className="hidden lg:flex flex-row items-center lg:w-1/5 flex-grow justify-end"
         >
-          <a
-            href="tel:+15037797796"
-            target="_blank"
-            className="flex flex-nowrap pr-5 hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
-          >
-            503-779-7796
-          </a>
           <LinkButton
             linkTo="/contact"
             buttonText="Contact Us"
