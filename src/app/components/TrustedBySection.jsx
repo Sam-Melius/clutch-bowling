@@ -7,7 +7,9 @@ export default function TrustedBySection() {
       id="trusted-by"
       className="h-fit grid gap-5 lg:gap-x-10 lg:gap-y-0 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 bg-white p-10"
     >
-      <p className="col-span-full text-center text-xl text-black">Trusted By</p>
+      <p className="col-span-full text-center text-xl text-black font-medium">
+        Trusted By
+      </p>
       {bowlingCentersArray.map((item, index) => (
         <figure key={index}>
           <BowlingCenterCard name={item.name} logo={item.logo} url={item.url} />

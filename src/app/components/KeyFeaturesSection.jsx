@@ -7,11 +7,15 @@ import { GiBowlingAlley } from "react-icons/gi";
 import { BiBowlingBall } from "react-icons/bi";
 import { HiOutlineTrophy } from "react-icons/hi2";
 import { MdTabletMac } from "react-icons/md";
+import LinkButton from "./Buttons/LinkButton";
 
 export default function KeyFeaturesSection() {
   return (
-    <section id="key-features" className="px-5 py-10 lg:p-10">
-      <h2 className="text-3xl md:text-4xl lg:text-6xl text-center mb-8 lg:mb-12 neon-letter">
+    <section
+      id="key-features"
+      className="flex flex-col gap-8 lg:gap-12 px-5 py-10 lg:p-10"
+    >
+      <h2 className="text-3xl md:text-4xl lg:text-6xl text-center font-medium">
         Key Features
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
@@ -55,6 +59,9 @@ export default function KeyFeaturesSection() {
           title="Control Panel"
           content="We provide software that easily allows you to control all of the system's features such as starting the system, setting effects, starting games, uploading logos and ads, and much more"
         />
+      </div>
+      <div className="flex justify-center">
+        <LinkButton linkTo="/about" buttonText="View All" variation="primary" />
       </div>
     </section>
   );

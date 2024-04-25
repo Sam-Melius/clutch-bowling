@@ -1,7 +1,12 @@
 import localFont from "next/font/local";
-import { Space_Grotesk } from "next/font/google";
+import { MuseoModerno, Roboto } from "next/font/google";
 
-export const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
+export const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
+
+export const museo = MuseoModerno({ subsets: ["latin"] });
 
 export const goshaSans = localFont({
   src: [

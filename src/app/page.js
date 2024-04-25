@@ -6,9 +6,7 @@ export default function Home() {
   return (
     <main>
       <HeroVideo />
-
       <TrustedBySection />
-
       <KeyFeaturesSection />
     </main>
   );

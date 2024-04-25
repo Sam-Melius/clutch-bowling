@@ -1,4 +1,5 @@
 import LinkButton from "./Buttons/LinkButton";
+import { museo } from "../styles/fonts/fonts";
 
 export default function HeroVideo() {
   return (
@@ -15,7 +16,9 @@ export default function HeroVideo() {
       </video>
       <div className="absolute w-full h-full flex items-center justify-center">
         <div className="flex flex-col gap-8 w-fit p-5 items-center animate__animated animate__fadeIn animate__slower">
-          <h1 className="text-4xl md:text-7xl xl:text-8xl cursor-default">
+          <h1
+            className={`${museo.className} font-semibold text-4xl md:text-7xl xl:text-8xl cursor-default`}
+          >
             The{" "}
             <span className="italic text-6xl md:text-9xl xl:text-[175px] neon-text transition-colors duration-300">
               <span className="neon-letter hover:text-red-500">u</span>

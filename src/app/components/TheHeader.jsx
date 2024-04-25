@@ -22,7 +22,7 @@ export default function TheHeader() {
           {desktopNavArray.map((item, index) => (
             <li key={index}>
               {" "}
-              <Link href={item.linkTo} className="hover-underline">
+              <Link href={item.linkTo} className="hover-underline font-medium">
                 {item.text}
               </Link>
             </li>

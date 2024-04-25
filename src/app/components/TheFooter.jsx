@@ -32,15 +32,15 @@ export default function TheFooter() {
         <ul className="flex flex-col gap-y-5 col-span-1 lg:mx-auto">
           {footerNavArray.map((item, index) => (
             <li key={index}>
-              <Link href={item.linkTo} className="hover-underline">
+              <Link href={item.linkTo} className="hover-underline font-medium">
                 {item.text}
               </Link>
             </li>
           ))}
         </ul>
 
-        <div className="flex flex-col gap-y-5 col-span-full lg:col-span-1 lg:mx-auto text-xl">
-          <div className="flex flex-row items-start gap-3 hover:text-clutchBlue-300">
+        <div className="flex flex-col gap-y-5 col-span-full lg:col-span-1 lg:mx-auto text-xl font-medium">
+          <div className="flex flex-row items-start gap-3 hover:text-clutchBlue-400">
             <FaLocationDot className="mt-1" />
             <a
               href="https://maps.app.goo.gl/zoq8vx7NMeZvhW6D7"
@@ -51,13 +51,13 @@ export default function TheFooter() {
               Salem, OR 97301
             </a>
           </div>
-          <div className="flex flex-row items-center gap-3 hover:text-clutchBlue-300">
+          <div className="flex flex-row items-center gap-3 hover:text-clutchBlue-400">
             <FaPhone />
             <a className="text-base" href="tel:+15039675228" target="_blank">
               503-779-7796
             </a>
           </div>
-          <div className="flex flex-row items-center gap-3 hover:text-clutchBlue-300">
+          <div className="flex flex-row items-center gap-3 hover:text-clutchBlue-400">
             <MdEmail />
             <a
               className="text-base"
@@ -71,28 +71,28 @@ export default function TheFooter() {
             <a
               href="https://www.linkedin.com/company/clutchbowling/"
               target="_blank"
-              className="hover:text-clutchBlue-300"
+              className="hover:text-clutchBlue-400"
             >
               <FaLinkedin />
             </a>
             <a
               href="https://www.facebook.com/clutchbowling"
               target="_blank"
-              className="hover:text-clutchBlue-300"
+              className="hover:text-clutchBlue-400"
             >
               <FaFacebook />
             </a>
             <a
               href="https://twitter.com/ClutchBowling"
               target="_blank"
-              className="hover:text-clutchBlue-300"
+              className="hover:text-clutchBlue-400"
             >
               <FaTwitter />
             </a>
             <a
               href="https://www.instagram.com/clutchbowling/"
               target="_blank"
-              className="hover:text-clutchBlue-300"
+              className="hover:text-clutchBlue-400"
             >
               <FaInstagram />
             </a>
