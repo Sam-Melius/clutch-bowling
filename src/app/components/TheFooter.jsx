@@ -67,7 +67,7 @@ export default function TheFooter() {
               sales@clutchbowling.com
             </a>
           </div>
-          <div className="text-3xl flex flex-row gap-x-5">
+          <div className="flex flex-row gap-x-5 mt-1">
             <a
               href="https://www.linkedin.com/company/clutchbowling/"
               target="_blank"

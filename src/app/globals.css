@@ -37,6 +37,9 @@ main {
 
 .neon-letter {
   animation: neon-pulse 1.5s infinite alternate;
+  cursor: default;
+  transition: all;
+  transition-duration: 400ms;
 }
 
 @keyframes neon-pulse {

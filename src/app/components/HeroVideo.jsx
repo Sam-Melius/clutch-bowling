@@ -14,21 +14,20 @@ export default function HeroVideo() {
         Your browser does not support the video tag.
       </video>
       <div className="absolute w-full h-full flex items-center justify-center">
-        <div className="flex flex-col gap-8 w-fit p-5 items-center">
-          <h1 className="text-4xl md:text-7xl xl:text-8xl">
+        <div className="flex flex-col gap-8 w-fit p-5 items-center animate__animated animate__fadeIn animate__slower">
+          <h1 className="text-4xl md:text-7xl xl:text-8xl cursor-default">
             The{" "}
-            <span className="italic text-6xl md:text-9xl xl:text-[150px] neon-text">
-              <span className="neon-letter">u</span>
-              <span className="neon-letter">l</span>
-              <span className="neon-letter">t</span>
-              <span className="neon-letter">i</span>
-              <span className="neon-letter">m</span>
-              <span className="neon-letter">a</span>
-              <span className="neon-letter">t</span>
-              <span className="neon-letter">e</span>
+            <span className="italic text-6xl md:text-9xl xl:text-[175px] neon-text transition-colors duration-300">
+              <span className="neon-letter hover:text-red-500">u</span>
+              <span className="neon-letter hover:text-orange-500">l</span>
+              <span className="neon-letter hover:text-amber-500">t</span>
+              <span className="neon-letter hover:text-yellow-500">i</span>
+              <span className="neon-letter hover:text-green-500">m</span>
+              <span className="neon-letter hover:text-blue-500">a</span>
+              <span className="neon-letter hover:text-indigo-700">t</span>
+              <span className="neon-letter hover:text-purple-700">e</span>
             </span>
-            <br />
-            bowling experience
+            <br /> bowling experience
           </h1>
           <LinkButton
             linkTo="/about"
