@@ -2,7 +2,7 @@ import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 import { desktopNavArray } from "./data/NavItems";
 import Image from "next/image";
-import clutchLogo from "../../../public/logos/clutch-logo-white.png";
+import clutchLogo from "../../../public/logos/clutch-icon-white.png";
 import LinkButton from "./Buttons/LinkButton";
 
 export default function TheHeader() {
@@ -13,7 +13,7 @@ export default function TheHeader() {
           <Image
             src={clutchLogo}
             alt="Clutch Bowling"
-            className="w-[225px] md:w-[250px] h-auto"
+            className="h-[75px] w-auto"
             priority
           />
         </Link>

@@ -49,7 +49,7 @@ export default function MobileMenu() {
       )}
 
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-clutchBlue-800 text-white font-medium uppercase bg-opacity-95 z-[9000] animate__animated animate__slideInDown">
+        <div className="lg:hidden fixed inset-0 bg-black text-white font-medium uppercase bg-opacity-95 z-[9000] animate__animated animate__slideInDown">
           <div className="flex flex-col h-full justify-center space-y-12 items-center text-xl">
             {mobileNavArray.map((item, index) => (
               <Link key={index} href={item.linkTo} onClick={toggleMobileMenu}>

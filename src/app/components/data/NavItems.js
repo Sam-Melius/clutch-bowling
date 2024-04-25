@@ -4,7 +4,7 @@ export const mobileNavArray = [
     linkTo: "/",
   },
   {
-    text: "About",
+    text: "About Us",
     linkTo: "/about",
   },
   {
@@ -27,7 +27,7 @@ export const mobileNavArray = [
 
 export const desktopNavArray = [
   {
-    text: "About",
+    text: "About Us",
     linkTo: "/about",
   },
   {
