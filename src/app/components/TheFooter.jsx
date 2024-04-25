@@ -10,6 +10,7 @@ import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Image from "next/image";
 import clutchLogo from "../../../public/logos/clutch-logo-white.png";
+import { footerNavArray } from "./data/NavItems";
 
 export default function TheFooter() {
   return (
@@ -29,36 +30,13 @@ export default function TheFooter() {
         </div>
 
         <ul className="flex flex-col gap-y-5 col-span-1 lg:mx-auto">
-          <Link
-            href="/about"
-            className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
-          >
-            About
-          </Link>
-          <Link
-            href="/pricing"
-            className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
-          >
-            Pricing
-          </Link>
-          <Link
-            href="/FAQ"
-            className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
-          >
-            FAQs
-          </Link>
-          <Link
-            href="/patch-notes"
-            className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
-          >
-            Patch Notes
-          </Link>
-          <Link
-            href="/contact"
-            className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
-          >
-            Contact
-          </Link>
+          {footerNavArray.map((item, index) => (
+            <li key={index}>
+              <Link href={item.linkTo} className="hover-underline">
+                {item.text}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         <div className="flex flex-col gap-y-5 col-span-full lg:col-span-1 lg:mx-auto text-xl">

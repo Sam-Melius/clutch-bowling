@@ -18,17 +18,16 @@ export default function TheHeader() {
           />
         </Link>
 
-        <div className="hidden lg:flex flex-row items-center justify-center gap-8 lg:w-3/5 max-w-fit">
+        <ul className="hidden lg:flex flex-row items-center justify-center gap-8 lg:w-3/5 max-w-fit">
           {desktopNavArray.map((item, index) => (
-            <Link
-              key={index}
-              href={item.linkTo}
-              className="hover:text-clutchBlue-300 hover:underline decoration-2 underline-offset-[6px]"
-            >
-              {item.text}
-            </Link>
+            <li key={index}>
+              {" "}
+              <Link href={item.linkTo} className="hover-underline">
+                {item.text}
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
 
         <div
           href="/"

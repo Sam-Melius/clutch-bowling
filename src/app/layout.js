@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`min-h-svh flex flex-col mx-auto relative ${goshaSans.className} font-extralight`}
+        className={`min-h-svh flex flex-col mx-auto relative ${goshaSans.className}`}
       >
         <TheHeader />
         {children}

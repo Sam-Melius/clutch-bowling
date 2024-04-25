@@ -12,15 +12,15 @@ export const mobileNavArray = [
     linkTo: "/pricing",
   },
   {
-    text: "FAQ",
-    linkTo: "/faq",
+    text: "FAQs",
+    linkTo: "/faqs",
   },
   {
     text: "Patch Notes",
     linkTo: "/patch-notes",
   },
   {
-    text: "Contact",
+    text: "Contact Us",
     linkTo: "/contact",
   },
 ];
@@ -35,11 +35,34 @@ export const desktopNavArray = [
     linkTo: "/pricing",
   },
   {
-    text: "FAQ",
-    linkTo: "/faq",
+    text: "FAQs",
+    linkTo: "/faqs",
   },
   {
     text: "Patch Notes",
     linkTo: "/patch-notes",
+  },
+];
+
+export const footerNavArray = [
+  {
+    text: "About Us",
+    linkTo: "/about",
+  },
+  {
+    text: "Pricing",
+    linkTo: "/pricing",
+  },
+  {
+    text: "FAQs",
+    linkTo: "/faqs",
+  },
+  {
+    text: "Patch Notes",
+    linkTo: "/patch-notes",
+  },
+  {
+    text: "Contact Us",
+    linkTo: "/contact",
   },
 ];
