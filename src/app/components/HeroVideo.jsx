@@ -30,8 +30,8 @@ export default function HeroVideo() {
             <br /> bowling experience
           </h1>
           <LinkButton
-            linkTo="/about"
-            buttonText="Learn More"
+            linkTo="#key-features"
+            buttonText="Explore Features"
             variation="primary"
           />
         </div>

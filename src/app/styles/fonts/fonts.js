@@ -1,4 +1,7 @@
 import localFont from "next/font/local";
+import { Space_Grotesk } from "next/font/google";
+
+export const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const goshaSans = localFont({
   src: [

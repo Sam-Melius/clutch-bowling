@@ -36,7 +36,7 @@ export default function TheHeader() {
           <LinkButton
             linkTo="/contact"
             buttonText="Contact Us"
-            variation="primary"
+            variation="secondary"
           />
         </div>
         <MobileMenu />
