@@ -30,3 +30,29 @@ main {
   margin-right: auto;
   width: 100%;
 }
+
+.neon-text {
+  display: inline-block;
+}
+
+.neon-letter {
+  animation: neon-pulse 1.5s infinite alternate;
+}
+
+@keyframes neon-pulse {
+  0% {
+    text-shadow: 0 0 16px #f54d4d;
+  }
+  25% {
+    text-shadow: 0 0 16px #f7a117;
+  }
+  50% {
+    text-shadow: 0 0 16px #fff268;
+  }
+  75% {
+    text-shadow: 0 0 16px #7cf17c;
+  }
+  100% {
+    text-shadow: 0 0 16px #5656ff;
+  }
+}
