@@ -6,7 +6,7 @@ export default function HeroVideo() {
       <video
         autoPlay
         muted
-        // loop
+        loop
         className="w-full h-full object-cover brightness-50"
         preload="auto"
       >
