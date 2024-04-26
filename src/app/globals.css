@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+/* @layer components {
   .hover-underline {
     @apply hover:text-clutchBlue-400 hover:underline decoration-2 underline-offset-[6px];
   }
-}
+} */
 
 :root {
   --main-bg-color: black;
@@ -29,33 +29,4 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-}
-
-.neon-text {
-  display: inline-block;
-}
-
-.neon-letter {
-  animation: neon-pulse 1.5s infinite alternate;
-  cursor: default;
-  transition: all;
-  transition-duration: 400ms;
-}
-
-@keyframes neon-pulse {
-  0% {
-    text-shadow: 0 0 16px #f54d4d;
-  }
-  25% {
-    text-shadow: 0 0 16px #f7a117;
-  }
-  50% {
-    text-shadow: 0 0 16px #fff268;
-  }
-  75% {
-    text-shadow: 0 0 16px #7cf17c;
-  }
-  100% {
-    text-shadow: 0 0 16px #5656ff;
-  }
 }

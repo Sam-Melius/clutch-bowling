@@ -1,5 +1,4 @@
 import LinkButton from "./Buttons/LinkButton";
-import { museo } from "../styles/fonts/fonts";
 
 export default function HeroVideo() {
   return (
@@ -14,13 +13,13 @@ export default function HeroVideo() {
         <source src="/videos/clutch-bowling.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute w-full h-full flex items-center justify-center">
+      {/* <div className="absolute w-full h-full flex items-center justify-center">
         <div className="flex flex-col gap-8 w-fit p-5 items-center animate__animated animate__fadeIn animate__slower">
           <h1
-            className={`${museo.className} font-semibold text-4xl md:text-7xl xl:text-8xl cursor-default`}
+            className={`font-semibold text-4xl md:text-7xl xl:text-8xl cursor-default`}
           >
             The{" "}
-            <span className="italic text-6xl md:text-9xl xl:text-[175px] neon-text transition-colors duration-300">
+            <span className="text-6xl md:text-9xl xl:text-[175px] neon-text transition-colors duration-300">
               <span className="neon-letter hover:text-red-500">u</span>
               <span className="neon-letter hover:text-orange-500">l</span>
               <span className="neon-letter hover:text-amber-500">t</span>
@@ -38,7 +37,12 @@ export default function HeroVideo() {
             variation="primary"
           />
         </div>
-      </div>
+      </div> */}
+      {/* <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">
+        <div className="col-span-full">
+          <h1>The ultimate bowling experience</h1>
+        </div>
+      </div> */}
     </section>
   );
 }

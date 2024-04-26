@@ -1,45 +1,21 @@
 import Link from "next/link";
-import MobileMenu from "./MobileMenu";
-import { desktopNavArray } from "./data/NavItems";
 import Image from "next/image";
 import clutchLogo from "../../../public/logos/clutch-icon-white.png";
-import LinkButton from "./Buttons/LinkButton";
+import Menu from "./Menu";
 
 export default function TheHeader() {
   return (
     <header className="absolute top-0 flex flex-row w-full z-50">
-      <nav className="flex flex-row w-full h-fit lg:items-center justify-between m-5">
-        <Link href="/" className="lg:w-1/5 flex-grow">
+      <nav className="w-full m-5 flex flex-row justify-between items-start">
+        <Link href="/">
           <Image
             src={clutchLogo}
             alt="Clutch Bowling"
-            className="h-[75px] w-auto"
+            className="w-[75px] h-auto"
             priority
           />
         </Link>
-
-        <ul className="hidden lg:flex flex-row items-center justify-center gap-8 lg:w-3/5 max-w-fit">
-          {desktopNavArray.map((item, index) => (
-            <li key={index}>
-              {" "}
-              <Link href={item.linkTo} className="hover-underline font-medium">
-                {item.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        <div
-          href="/"
-          className="hidden lg:flex flex-row items-center lg:w-1/5 flex-grow justify-end"
-        >
-          <LinkButton
-            linkTo="/contact"
-            buttonText="Contact Us"
-            variation="secondary"
-          />
-        </div>
-        <MobileMenu />
+        <Menu />
       </nav>
     </header>
   );

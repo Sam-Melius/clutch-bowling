@@ -1,10 +1,10 @@
-export const mobileNavArray = [
+export const navLinksArray = [
   {
     text: "Home",
     linkTo: "/",
   },
   {
-    text: "About",
+    text: "About Us",
     linkTo: "/about",
   },
   {
@@ -20,49 +20,7 @@ export const mobileNavArray = [
     linkTo: "/patch-notes",
   },
   {
-    text: "Contact",
-    linkTo: "/contact",
-  },
-];
-
-export const desktopNavArray = [
-  {
-    text: "About",
-    linkTo: "/about",
-  },
-  {
-    text: "Pricing",
-    linkTo: "/pricing",
-  },
-  {
-    text: "FAQs",
-    linkTo: "/faqs",
-  },
-  {
-    text: "Patch Notes",
-    linkTo: "/patch-notes",
-  },
-];
-
-export const footerNavArray = [
-  {
-    text: "About",
-    linkTo: "/about",
-  },
-  {
-    text: "Pricing",
-    linkTo: "/pricing",
-  },
-  {
-    text: "FAQs",
-    linkTo: "/faqs",
-  },
-  {
-    text: "Patch Notes",
-    linkTo: "/patch-notes",
-  },
-  {
-    text: "Contact",
+    text: "Contact Us",
     linkTo: "/contact",
   },
 ];

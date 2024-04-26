@@ -3,104 +3,89 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaLocationDot,
   FaTwitter,
 } from "react-icons/fa6";
-import { FaPhone } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import Image from "next/image";
-import clutchLogo from "../../../public/logos/clutch-logo-white.png";
-import { footerNavArray } from "./data/NavItems";
+import { navLinksArray } from "./data/NavItems";
 
 export default function TheFooter() {
   return (
-    <footer
-      id="footer"
-      className="flex-shrink-0 justify-between px-5 lg:px-10 pt-12 lg:pt-14 pb-4 w-full h-fit"
-    >
-      <div className="grid gap-y-12 grid-cols-1 lg:grid-cols-3 w-fit lg:w-full mx-auto">
-        <div className="flex flex-col col-span-full lg:col-span-1">
-          <Link href="/" className="w-[300px]">
-            <Image
-              src={clutchLogo}
-              alt="Clutch Bowling"
-              className="w-[300px] h-auto"
-            />
-          </Link>
-        </div>
-
-        <ul className="flex flex-col gap-y-5 col-span-1 lg:mx-auto">
-          {footerNavArray.map((item, index) => (
-            <li key={index}>
-              <Link href={item.linkTo} className="hover-underline font-medium">
-                {item.text}
-              </Link>
-            </li>
+    <footer id="footer" className="p-5 lg:p-10 lg:pb-5 w-full h-fit">
+      <div className="flex flex-col gap-10">
+        <div className="grid gap-5 lg:gap-y-10 grid-cols-2 lg:grid-cols-5">
+          {navLinksArray.map((item, index) => (
+            <Link
+              key={index}
+              href={item.linkTo}
+              className="col-span-1 w-fit font-medium hover:underline underline-offset-4 hover:text-clutchBlue-500"
+            >
+              {item.text}
+            </Link>
           ))}
-        </ul>
-
-        <div className="flex flex-col gap-y-5 col-span-full lg:col-span-1 lg:mx-auto text-xl font-medium">
-          <div className="flex flex-row items-start gap-3 hover:text-clutchBlue-400">
-            <FaLocationDot className="mt-1" />
+          <div className="flex flex-col gap-2">
+            <p className="font-medium">Follow Us</p>
+            <div className="flex flex-row gap-4 text-xl">
+              <a
+                href="https://www.linkedin.com/company/clutchbowling/"
+                target="_blank"
+                className="hover:text-clutchBlue-500"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://www.facebook.com/clutchbowling"
+                target="_blank"
+                className="hover:text-clutchBlue-500"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://twitter.com/ClutchBowling"
+                target="_blank"
+                className="hover:text-clutchBlue-500"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://www.instagram.com/clutchbowling/"
+                target="_blank"
+                className="hover:text-clutchBlue-500"
+              >
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col gap-1">
+            <p className="font-medium">Physical Address</p>
             <a
               href="https://maps.app.goo.gl/zoq8vx7NMeZvhW6D7"
               target="_blank"
-              className="text-base"
+              className="hover:underline underline-offset-4 hover:text-clutchBlue-500"
             >
               370 Belmont St NE <br />
               Salem, OR 97301
             </a>
           </div>
-          <div className="flex flex-row items-center gap-3 hover:text-clutchBlue-400">
-            <FaPhone />
-            <a className="text-base" href="tel:+15039675228" target="_blank">
+          <div className="flex flex-col gap-1">
+            <p className="font-medium">Phone</p>
+            <a
+              href="tel:+15039675228"
+              target="_blank"
+              className="hover:underline underline-offset-4 hover:text-clutchBlue-500"
+            >
               503-779-7796
             </a>
           </div>
-          <div className="flex flex-row items-center gap-3 hover:text-clutchBlue-400">
-            <MdEmail />
+          <div className="flex flex-col gap-1">
+            <p className="font-medium">Email</p>
             <a
-              className="text-base"
               href="mailto:sales@clutchbowling.com"
               target="_blank"
+              className="hover:underline underline-offset-4 hover:text-clutchBlue-500"
             >
               sales@clutchbowling.com
             </a>
           </div>
-          <div className="flex flex-row gap-x-5 mt-1">
-            <a
-              href="https://www.linkedin.com/company/clutchbowling/"
-              target="_blank"
-              className="hover:text-clutchBlue-400"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://www.facebook.com/clutchbowling"
-              target="_blank"
-              className="hover:text-clutchBlue-400"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="https://twitter.com/ClutchBowling"
-              target="_blank"
-              className="hover:text-clutchBlue-400"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://www.instagram.com/clutchbowling/"
-              target="_blank"
-              className="hover:text-clutchBlue-400"
-            >
-              <FaInstagram />
-            </a>
-          </div>
-        </div>
-
-        <div className="col-span-full text-center text-xs">
-          © 2024 Clutch Bowling
+          <p className="text-xs text-gray-400">© 2024 Clutch Bowling</p>
         </div>
       </div>
     </footer>

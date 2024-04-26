@@ -34,7 +34,7 @@ export default function KeyFeaturesSection() {
           <Accordion
             icon={<SiImagedotsc />}
             title="Anamorphic Image Engine"
-            content="Just making sure the image is on the lane properly isn't enough, with our system the image is rendered from a perspective view so it always looks best when standing at the foul line."
+            content="Just making sure the image is on the lane properly isn't enough. With our system the image is rendered from a perspective view so it always looks best when standing at the foul line."
           />
           <Accordion
             icon={<PiCrosshairBold />}
