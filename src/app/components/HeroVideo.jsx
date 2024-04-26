@@ -26,9 +26,10 @@ export default function HeroVideo() {
           </h1>
           <div className="ml-1 md:ml-2.5 lg:ml-3 xl:ml-3.5 2xl:ml-5">
             <LinkButton
-              linkTo="/about"
+              linkTo="#key-features"
               linkText="Learn more"
               icon={<FaArrowRight />}
+              variant="primary"
             />
           </div>
         </div>
