@@ -1,3 +1,4 @@
+import { FaArrowRight } from "react-icons/fa6";
 import LinkButton from "./Buttons/LinkButton";
 
 export default function HeroVideo() {
@@ -13,36 +14,25 @@ export default function HeroVideo() {
         <source src="/videos/clutch-bowling.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      {/* <div className="absolute w-full h-full flex items-center justify-center">
-        <div className="flex flex-col gap-8 w-fit p-5 items-center animate__animated animate__fadeIn animate__slower">
-          <h1
-            className={`font-semibold text-4xl md:text-7xl xl:text-8xl cursor-default`}
-          >
-            The{" "}
-            <span className="text-6xl md:text-9xl xl:text-[175px] neon-text transition-colors duration-300">
-              <span className="neon-letter hover:text-red-500">u</span>
-              <span className="neon-letter hover:text-orange-500">l</span>
-              <span className="neon-letter hover:text-amber-500">t</span>
-              <span className="neon-letter hover:text-yellow-500">i</span>
-              <span className="neon-letter hover:text-green-500">m</span>
-              <span className="neon-letter hover:text-blue-500">a</span>
-              <span className="neon-letter hover:text-indigo-700">t</span>
-              <span className="neon-letter hover:text-purple-700">e</span>
+
+      <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">
+        <div className="flex flex-col gap-2 md:gap-4 col-span-full">
+          <h1 className="text-3xl md:text-6xl xl:text-7xl 2xl:text-8xl font-medium">
+            The ultimate interactive
+            <br />
+            <span className="pl-1 md:pl-2.5 lg:pl-2.5 xl:pl-3 2xl:pl-4">
+              bowling experience.
             </span>
-            <br /> bowling experience
           </h1>
-          <LinkButton
-            linkTo="#key-features"
-            buttonText="Explore Features"
-            variation="primary"
-          />
+          <div className="ml-1 md:ml-2.5 lg:ml-3 xl:ml-3.5 2xl:ml-5">
+            <LinkButton
+              linkTo="/about"
+              linkText="Learn more"
+              icon={<FaArrowRight />}
+            />
+          </div>
         </div>
-      </div> */}
-      {/* <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">
-        <div className="col-span-full">
-          <h1>The ultimate bowling experience</h1>
-        </div>
-      </div> */}
+      </div>
     </section>
   );
 }
