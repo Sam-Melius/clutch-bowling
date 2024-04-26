@@ -48,7 +48,7 @@ export default function Menu() {
                 key={index}
                 href={item.linkTo}
                 onClick={toggleMenu}
-                className="text-3xl"
+                className="text-3xl hover:text-clutchBlue-900 transition duration-300"
               >
                 {item.text}
               </Link>

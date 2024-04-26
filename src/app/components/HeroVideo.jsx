@@ -15,7 +15,7 @@ export default function HeroVideo() {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">
+      <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-start place-content-end p-5">
         <div className="flex flex-col gap-2 md:gap-4 col-span-full">
           <h1 className="text-3xl md:text-6xl xl:text-7xl 2xl:text-8xl font-medium">
             The ultimate interactive
