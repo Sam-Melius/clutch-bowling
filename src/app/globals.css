@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .hover-underline {
+    @apply hover:underline underline-offset-4 hover:text-clutchBlue-500 transition-all duration-300;
+  }
+}
+
 :root {
   --main-bg-color: black;
   --main-text-color: white;

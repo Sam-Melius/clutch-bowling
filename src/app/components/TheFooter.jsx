@@ -1,11 +1,7 @@
 import Link from "next/link";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa6";
 import { navLinksArray } from "./data/NavItems";
+import SocialIcon from "./Socials/SocialIcon";
+import { socialsArray } from "./data/Socials";
 
 export default function TheFooter() {
   return (
@@ -16,50 +12,27 @@ export default function TheFooter() {
             <Link
               key={index}
               href={item.linkTo}
-              className="col-span-1 w-fit font-medium hover:underline underline-offset-4 hover:text-clutchBlue-500"
+              className="col-span-1 w-fit font-medium hover-underline"
             >
               {item.text}
             </Link>
           ))}
           <div className="flex flex-col gap-2">
             <p className="font-medium">Follow Us</p>
-            <div className="flex flex-row gap-4 text-xl">
-              <a
-                href="https://www.linkedin.com/company/clutchbowling/"
-                target="_blank"
-                className="hover:text-clutchBlue-500"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://www.facebook.com/clutchbowling"
-                target="_blank"
-                className="hover:text-clutchBlue-500"
-              >
-                <FaFacebook />
-              </a>
-              <a
-                href="https://twitter.com/ClutchBowling"
-                target="_blank"
-                className="hover:text-clutchBlue-500"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://www.instagram.com/clutchbowling/"
-                target="_blank"
-                className="hover:text-clutchBlue-500"
-              >
-                <FaInstagram />
-              </a>
-            </div>
+            <ul className="flex flex-row gap-4 text-xl">
+              {socialsArray.map((item, index) => (
+                <li key={index}>
+                  <SocialIcon url={item.url} icon={item.icon} />
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="flex flex-col gap-1">
             <p className="font-medium">Physical Address</p>
             <a
               href="https://maps.app.goo.gl/zoq8vx7NMeZvhW6D7"
               target="_blank"
-              className="hover:underline underline-offset-4 hover:text-clutchBlue-500"
+              className="hover-underline"
             >
               370 Belmont St NE <br />
               Salem, OR 97301
@@ -70,7 +43,7 @@ export default function TheFooter() {
             <a
               href="tel:+15039675228"
               target="_blank"
-              className="hover:underline underline-offset-4 hover:text-clutchBlue-500"
+              className="hover-underline"
             >
               503-779-7796
             </a>
@@ -80,7 +53,7 @@ export default function TheFooter() {
             <a
               href="mailto:sales@clutchbowling.com"
               target="_blank"
-              className="hover:underline underline-offset-4 hover:text-clutchBlue-500"
+              className="hover-underline"
             >
               sales@clutchbowling.com
             </a>

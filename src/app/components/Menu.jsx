@@ -24,27 +24,32 @@ export default function Menu() {
   };
 
   return (
-    <nav className="text-black">
+    <nav>
       <div className={isMenuOpen ? "hidden" : "flex flex-row"}>
         <button
           onClick={toggleMenu}
-          className="underline underline-offset-4 text-white"
+          className="underline underline-offset-4 hover-underline"
         >
           Menu
         </button>
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-white/50 backdrop-blur-md z-[9000] animate__animated animate__slideInRight animate__fast">
-          <div className="flex flex-col h-full justify-start space-y-12 items-end text-3xl mt-5 mr-5">
+        <div className="fixed inset-0 text-black bg-white/50 backdrop-blur-md z-[9000] animate__animated animate__slideInRight animate__fast">
+          <div className="flex flex-col h-full justify-start space-y-12 items-end mt-5 mr-5">
             <button
               onClick={toggleMenu}
-              className="z-[9991] underline underline-offset-4 text-base"
+              className="z-[9991] underline underline-offset-4 hover-underline"
             >
               Close
             </button>
             {navLinksArray.map((item, index) => (
-              <Link key={index} href={item.linkTo} onClick={toggleMenu}>
+              <Link
+                key={index}
+                href={item.linkTo}
+                onClick={toggleMenu}
+                className="text-3xl"
+              >
                 {item.text}
               </Link>
             ))}
