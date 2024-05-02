@@ -10,6 +10,7 @@ export default function HeroVideo() {
         loop
         className="w-full h-full object-cover brightness-50"
         preload="auto"
+        playsInline
       >
         <source src="/videos/clutch-bowling.mp4" type="video/mp4" />
         Your browser does not support the video tag.
