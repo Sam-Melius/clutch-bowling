@@ -25,7 +25,8 @@ export default function HomeGridlinesSection() {
       <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">
         <div className="flex flex-col gap-2 md:gap-4 col-span-full">
           <h4 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl p-5 md:p-10 lg:p-20 text-center">
-            We're on a mission to revolutionize the way you think about bowling.
+            We&apos;re on a mission to revolutionize the way you think about
+            bowling.
           </h4>
         </div>
       </div>
