@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import fireballEffect from "../../../public/videos/fireball.gif";
 import Image from "next/image";
 import GradientSection from "../components/GradientSection";
-import FAQsSection from "../components/FAQsSection";
+import GridlinesSection from "../components/GridlinesSection";
 import AllFeaturesSection from "../components/AllFeaturesSection";
 
 export default function AboutPage() {
@@ -45,7 +45,12 @@ export default function AboutPage() {
 
       <GradientSection variant="dark" size="small" isRotated />
 
-      <FAQsSection />
+      <GridlinesSection
+        variant="small"
+        heading="Have more questions?"
+        linkText="View our FAQs"
+        linkTo="/faqs"
+      />
 
       <GradientSection variant="dark" size="small" />
     </main>
