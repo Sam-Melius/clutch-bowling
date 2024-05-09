@@ -9,8 +9,18 @@
 }
 
 :root {
-  --main-bg-color: #101010;
-  --main-text-color: white;
+  --primaryDark: #101010;
+  --primaryLight: white;
+  --clutchBlue-50: #f0f6fc;
+  --clutchBlue-100: #d9eaf9;
+  --clutchBlue-200: #c0def5;
+  --clutchBlue-300: #a7d2f2;
+  --clutchBlue-400: #8ec6ee;
+  --clutchBlue-500: #75baeb;
+  --clutchBlue-600: #5caee7;
+  --clutchBlue-700: #43a2e4;
+  --clutchBlue-800: #2a96e0;
+  --clutchBlue-900: #118ad7;
 }
 
 html {
@@ -18,8 +28,8 @@ html {
 }
 
 body {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+  background-color: var(--primaryDark);
+  color: var(--primaryLight);
 }
 
 main {
@@ -29,4 +39,20 @@ main {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+
+.shadow-top {
+  box-shadow: 0 -4px 16px -1px var(--clutchBlue-500);
+}
+
+.shadow-top-dark {
+  box-shadow: 0 -4px 16px -1px var(--clutchBlue-700);
+}
+
+.shadow-bottom {
+  box-shadow: 0 4px 16px -1px var(--clutchBlue-500);
+}
+
+.shadow-bottom-dark {
+  box-shadow: 0 4px 16px -1px var(--clutchBlue-700);
 }

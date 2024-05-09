@@ -1,9 +1,8 @@
-import LinkButton from "./components/Buttons/LinkButton";
 import HeroVideo from "./components/HeroVideo";
 import HomeGridlinesSection from "./components/HomeGridlinesSection";
 import KeyFeaturesSection from "./components/KeyFeaturesSection";
+import ShadowBars from "./components/ShadowBars";
 import TrustedBySection from "./components/TrustedBySection";
-import { FaArrowRight } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -11,6 +10,7 @@ export default function Home() {
       <HeroVideo />
       <HomeGridlinesSection />
       <KeyFeaturesSection />
+      <ShadowBars />
       <TrustedBySection />
     </main>
   );

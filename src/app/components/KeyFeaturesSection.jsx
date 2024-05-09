@@ -9,7 +9,7 @@ export default function KeyFeaturesSection() {
   return (
     <section
       id="key-features"
-      className="grid grid-cols-1 lg:grid-cols-3 gap-10 p-10"
+      className="grid grid-cols-1 lg:grid-cols-3 gap-10 p-10 py-20"
     >
       <h3 className="col-span-full text-4xl md:text-5xl">Key Features</h3>
       <FeatureCard
