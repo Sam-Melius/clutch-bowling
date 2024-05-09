@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`min-h-svh flex flex-col mx-auto relative ${roboto.className} antialiased`}
       >

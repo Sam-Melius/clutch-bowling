@@ -4,7 +4,7 @@ export const navLinksArray = [
     linkTo: "/",
   },
   {
-    text: "About Us",
+    text: "About",
     linkTo: "/about",
   },
   {

@@ -18,7 +18,7 @@ export default function HeroVideo() {
 
       <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">
         <div className="flex flex-col gap-2 md:gap-4 col-span-full">
-          <h1 className="text-3xl md:text-6xl xl:text-7xl 2xl:text-8xl font-medium">
+          <h1 className="text-3xl md:text-6xl xl:text-8xl 2xl:text-8xl font-medium">
             The ultimate interactive
             <br />
             <span className="pl-1 md:pl-2.5 lg:pl-2.5 xl:pl-3 2xl:pl-4">
@@ -27,7 +27,7 @@ export default function HeroVideo() {
           </h1>
           <div className="ml-1 md:ml-2.5 lg:ml-3 xl:ml-3.5 2xl:ml-5">
             <LinkButton
-              linkTo="#key-features"
+              linkTo="#mission"
               linkText="Learn more"
               icon={<FaArrowRight />}
               variant="primary"
