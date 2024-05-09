@@ -1,8 +1,9 @@
 import HeroVideo from "./components/HeroVideo";
 import HomeGridlinesSection from "./components/HomeGridlinesSection";
 import KeyFeaturesSection from "./components/KeyFeaturesSection";
-import ShadowBars from "./components/ShadowBars";
+import GradientSection from "./components/GradientSection";
 import TrustedBySection from "./components/TrustedBySection";
+import FAQsSection from "./components/FAQsSection";
 
 export default function Home() {
   return (
@@ -10,9 +11,11 @@ export default function Home() {
       <HeroVideo />
       <TrustedBySection />
       <HomeGridlinesSection />
-      <ShadowBars />
+      <GradientSection size="small" variant="dark" />
       <KeyFeaturesSection />
-      <ShadowBars rotated />
+      <GradientSection size="small" variant="dark" isRotated />
+      <FAQsSection />
+      <GradientSection size="small" variant="dark" />
     </main>
   );
 }
