@@ -8,7 +8,7 @@ export default function Breadcrumbs() {
   const pathSegments = pathname.split("/").filter((segment) => segment !== "");
 
   return (
-    <nav className={`capitalize text-sm md:text-base flex w-full p-5 lg:px-10`}>
+    <nav className={`capitalize text-sm md:text-base flex w-full`}>
       <ul className="flex flex-wrap">
         <li>
           <Link

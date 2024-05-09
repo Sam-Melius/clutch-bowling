@@ -8,10 +8,11 @@ export default function Home() {
   return (
     <main>
       <HeroVideo />
-      <HomeGridlinesSection />
-      <KeyFeaturesSection />
-      <ShadowBars />
       <TrustedBySection />
+      <HomeGridlinesSection />
+      <ShadowBars />
+      <KeyFeaturesSection />
+      <ShadowBars rotated />
     </main>
   );
 }

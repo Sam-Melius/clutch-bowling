@@ -42,17 +42,9 @@ main {
 }
 
 .shadow-top {
-  box-shadow: 0 -4px 16px -1px var(--clutchBlue-500);
-}
-
-.shadow-top-dark {
-  box-shadow: 0 -4px 16px -1px var(--clutchBlue-700);
+  box-shadow: 0 -4px 16px -1px var(--clutchBlue-400);
 }
 
 .shadow-bottom {
-  box-shadow: 0 4px 16px -1px var(--clutchBlue-500);
-}
-
-.shadow-bottom-dark {
-  box-shadow: 0 4px 16px -1px var(--clutchBlue-700);
+  box-shadow: 0 4px 16px -1px var(--clutchBlue-400);
 }

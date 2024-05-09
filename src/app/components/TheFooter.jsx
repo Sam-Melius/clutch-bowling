@@ -5,9 +5,12 @@ import { socialsArray } from "./data/Socials";
 
 export default function TheFooter() {
   return (
-    <footer id="footer" className="p-5 lg:p-10 lg:pb-5 w-full h-fit">
+    <footer
+      id="footer"
+      className="px-10 py-20 pb-5 lg:p-10 lg:py-20 lg:pb-5 w-full h-fit"
+    >
       <div className="flex flex-col gap-10">
-        <div className="grid gap-5 lg:gap-y-10 grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-x-10 gap-y-20 grid-cols-2 lg:grid-cols-5">
           {navLinksArray.map((item, index) => (
             <Link
               key={index}

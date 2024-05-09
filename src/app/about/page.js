@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="flex flex-col h-full w-full">
           <div className="flex flex-col lg:flex-row lg:items-center gap-5 p-10">
             <div className="flex flex-col gap-5 lg:w-1/2">
-              <h4 className="text-4xl md:text-5xl">Built to impress.</h4>
+              <h4 className="text-7xl 2xl:text-8xl">Built to impress.</h4>
               <p>
                 With precise tracking and crisp imaging we strive to immerse
                 bowlers of all ages in our system. Clutch Bowling is a new kind
@@ -39,7 +39,7 @@ export default function AboutPage() {
             <Image
               src={fireballEffect}
               alt="Fireball effect"
-              className="w-full lg:w-1/2 p-10"
+              className="w-full lg:w-1/2 lg:p-10"
             />
           </div>
           <ShadowBars rotated />
@@ -112,7 +112,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <ShadowBars rotated />
+      <ShadowBars />
 
       <section
         id="mission"
@@ -122,21 +122,21 @@ export default function AboutPage() {
         {[...Array(16)].map((_, index) => (
           <div
             key={index}
-            className="bg-gray-500 aspect-square md:hidden shadow-inner shadow-clutchBlue-300"
+            className="bg-gray-500 aspect-square md:hidden shadow-inner shadow-clutchBlue-400"
           ></div>
         ))}
         {/* Tablet gridlines */}
         {[...Array(32)].map((_, index) => (
           <div
             key={index}
-            className="bg-gray-500 aspect-square hidden md:flex lg:hidden shadow-inner shadow-clutchBlue-300"
+            className="bg-gray-500 aspect-square hidden md:flex lg:hidden shadow-inner shadow-clutchBlue-400"
           ></div>
         ))}
         {/* Desktop gridlines */}
         {[...Array(48)].map((_, index) => (
           <div
             key={index}
-            className="bg-gray-500 aspect-square hidden lg:flex shadow-inner shadow-clutchBlue-300"
+            className="bg-gray-500 aspect-square hidden lg:flex shadow-inner shadow-clutchBlue-400"
           ></div>
         ))}
         <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center shadow-bottom">
@@ -155,6 +155,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <ShadowBars rotated />
     </main>
   );
 }
