@@ -24,7 +24,7 @@ export default function Home() {
         variant="small"
         heading="Have more questions?"
         linkText="View our FAQs"
-        linkTo="/faqs"
+        linkTo="/frequently-asked-questions"
       />
       <GradientSection size="small" variant="dark" />
     </main>

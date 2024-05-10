@@ -13,7 +13,7 @@ export const navLinksArray = [
   },
   {
     text: "FAQs",
-    linkTo: "/faqs",
+    linkTo: "/frequently-asked-questions",
   },
   {
     text: "Patch Notes",

@@ -34,12 +34,14 @@ export default function AboutPage() {
               src={fireballEffect}
               alt="Fireball effect"
               className="w-full lg:w-1/2 lg:p-10"
+              unoptimized
             />
           </div>
         </div>
       </section>
 
-      <GradientSection variant="dark" size="large" isRotated />
+      <GradientSection variant="dark" size="small" isRotated />
+      <GradientSection variant="dark" size="small" />
 
       <AllFeaturesSection />
 
@@ -47,9 +49,9 @@ export default function AboutPage() {
 
       <GridlinesSection
         variant="small"
-        heading="Have more questions?"
+        heading="Have questions?"
         linkText="View our FAQs"
-        linkTo="/faqs"
+        linkTo="/frequently-asked-questions"
       />
 
       <GradientSection variant="dark" size="small" />
