@@ -7,6 +7,7 @@ export default function GridlinesSection({
   heading,
   linkText,
   linkTo,
+  isContact,
 }) {
   if (variant === "large") {
     return (
@@ -41,12 +42,21 @@ export default function GridlinesSection({
               {heading}
             </h4>
             <div className="flex mx-auto">
-              <LinkButton
-                linkText={linkText}
-                linkTo={linkTo}
-                icon={<FaArrowRight />}
-                variant="primary"
-              />
+              {isContact ? (
+                <LinkButton
+                  linkText={linkText}
+                  icon={<FaArrowRight />}
+                  variant="primary"
+                  isContact
+                />
+              ) : (
+                <LinkButton
+                  linkText={linkText}
+                  linkTo={linkTo}
+                  icon={<FaArrowRight />}
+                  variant="primary"
+                />
+              )}
             </div>
           </div>
         </div>
@@ -85,12 +95,21 @@ export default function GridlinesSection({
               {heading}
             </h4>
             <div className="flex mx-auto">
-              <LinkButton
-                linkText={linkText}
-                linkTo={linkTo}
-                icon={<FaArrowRight />}
-                variant="primary"
-              />
+              {isContact ? (
+                <LinkButton
+                  linkText={linkText}
+                  icon={<FaArrowRight />}
+                  variant="primary"
+                  isContact
+                />
+              ) : (
+                <LinkButton
+                  linkText={linkText}
+                  linkTo={linkTo}
+                  icon={<FaArrowRight />}
+                  variant="primary"
+                />
+              )}
             </div>
           </div>
         </div>

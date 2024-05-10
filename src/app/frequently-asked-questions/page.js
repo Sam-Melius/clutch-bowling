@@ -2,6 +2,7 @@ import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
 import GradientSection from "../components/GradientSection";
 import GridlinesSection from "../components/GridlinesSection";
 import FAQCard from "../components/FAQCard";
+import ContactButton from "../components/ContactButton";
 
 const FAQsArray = [
   {
@@ -64,7 +65,7 @@ export default function FAQsPage() {
         variant="small"
         heading="Didn't answer your question?"
         linkText="Get in touch"
-        linkTo="/contact"
+        isContact
       />
 
       <GradientSection variant="dark" size="small" />

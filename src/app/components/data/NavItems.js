@@ -19,8 +19,4 @@ export const navLinksArray = [
     text: "Patch Notes",
     linkTo: "/patch-notes",
   },
-  {
-    text: "Contact Us",
-    linkTo: "/contact",
-  },
 ];

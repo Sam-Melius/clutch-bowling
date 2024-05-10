@@ -49,7 +49,7 @@ export default function AboutPage() {
 
       <GridlinesSection
         variant="small"
-        heading="Have questions?"
+        heading="Have more questions?"
         linkText="View our FAQs"
         linkTo="/frequently-asked-questions"
       />

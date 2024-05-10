@@ -22,7 +22,7 @@ export default function Home() {
       <GradientSection size="small" variant="dark" isRotated />
       <GridlinesSection
         variant="small"
-        heading="Have more questions?"
+        heading="Have questions?"
         linkText="View our FAQs"
         linkTo="/frequently-asked-questions"
       />

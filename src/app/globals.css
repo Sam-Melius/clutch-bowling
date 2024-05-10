@@ -8,8 +8,22 @@
   }
 }
 
+@layer utilities {
+  @variants responsive {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
 :root {
-  --primaryDark: #101010;
+  --primaryDark: #181818;
   --primaryLight: white;
   --clutchBlue-50: #f0f6fc;
   --clutchBlue-100: #d9eaf9;

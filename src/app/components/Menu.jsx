@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { navLinksArray } from "./data/NavItems";
+import ContactButton from "./ContactButton";
 
 export default function Menu() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -53,6 +54,9 @@ export default function Menu() {
                 {item.text}
               </Link>
             ))}
+            <p className="text-3xl lg:text-5xl hover:text-clutchBlue-700 transition duration-300">
+              <ContactButton buttonText="Contact Us" />
+            </p>
           </div>
         </div>
       )}
