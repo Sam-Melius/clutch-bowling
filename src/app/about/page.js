@@ -41,7 +41,7 @@ export default function AboutPage() {
 
       <section>
         <div className="flex flex-col h-full w-full">
-          <div className="flex flex-col lg:flex-row lg:items-center gap-5 p-10">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-5 py-10 px-5 lg:p-10">
             <div
               className="flex flex-col gap-5 lg:w-1/2"
               data-aos="fade-up"
