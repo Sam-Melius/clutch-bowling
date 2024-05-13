@@ -21,7 +21,7 @@ export default function Error({ error }) {
           <div className="flex flex-col lg:flex-row lg:items-center gap-5 p-10 lg:py-20">
             <div className="flex flex-col gap-5 lg:w-1/2">
               <h4 className="text-7xl 2xl:text-8xl">
-                Sorry, we can't find that page.
+                Sorry, we can&apos;t find that page.
               </h4>
               <LinkButton
                 variant="secondary"
