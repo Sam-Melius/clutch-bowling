@@ -30,17 +30,17 @@ export default function LinkButton({
     );
   } else if (variant === "primary" && isContact) {
     return (
-      <p className="flex flex-row items-center gap-2 w-fit lg:text-xl leading-none pb-0.5 border-b lg:border-b-2 border-transparent text-white hover:text-clutchBlue-500 hover:border-clutchBlue-500 transition duration-300 font-medium">
+      <div className="flex flex-row items-center gap-2 w-fit lg:text-xl leading-none pb-0.5 border-b lg:border-b-2 border-transparent text-white hover:text-clutchBlue-500 hover:border-clutchBlue-500 transition duration-300 font-medium">
         <ContactButton buttonText={linkText} />
         <div className="text-sm md:text-base">{icon}</div>
-      </p>
+      </div>
     );
   } else if (variant === "secondary" && isContact) {
     return (
-      <p className="flex flex-row items-center gap-2 w-fit lg:text-xl leading-none pb-0.5 border-b lg:border-b-2 border-transparent text-clutchBlue-500 hover:text-white hover:border-white transition duration-300 font-medium">
+      <div className="flex flex-row items-center gap-2 w-fit lg:text-xl leading-none pb-0.5 border-b lg:border-b-2 border-transparent text-clutchBlue-500 hover:text-white hover:border-white transition duration-300 font-medium">
         <ContactButton buttonText={linkText} />
         <div className="text-sm md:text-base">{icon}</div>
-      </p>
+      </div>
     );
   } else {
     return <div>Invalid variant type</div>;
