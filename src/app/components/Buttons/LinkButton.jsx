@@ -12,7 +12,7 @@ export default function LinkButton({
     return (
       <Link
         href={linkTo}
-        className="flex flex-row items-center gap-2 w-fit lg:text-xl leading-none pb-0.5 border-b lg:border-b-2 border-transparent hover:text-clutchBlue-500 hover:border-clutchBlue-500 transition duration-300 font-medium"
+        className="flex flex-row items-center gap-2 w-fit lg:text-xl leading-none pb-0.5 border-b lg:border-b-2 border-transparent text-white hover:text-clutchBlue-500 hover:border-clutchBlue-500 transition duration-300 font-medium"
       >
         {linkText}
         <div className="text-sm md:text-base">{icon}</div>
@@ -30,7 +30,7 @@ export default function LinkButton({
     );
   } else if (variant === "primary" && isContact) {
     return (
-      <p className="flex flex-row items-center gap-2 w-fit lg:text-xl leading-none pb-0.5 border-b lg:border-b-2 border-transparent text-clutchBlue-500 hover:text-white hover:border-white transition duration-300 font-medium">
+      <p className="flex flex-row items-center gap-2 w-fit lg:text-xl leading-none pb-0.5 border-b lg:border-b-2 border-transparent text-white hover:text-clutchBlue-500 hover:border-clutchBlue-500 transition duration-300 font-medium">
         <ContactButton buttonText={linkText} />
         <div className="text-sm md:text-base">{icon}</div>
       </p>

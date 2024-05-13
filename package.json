@@ -11,6 +11,7 @@
   "dependencies": {
     "@typeform/embed-react": "^3.17.0",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",

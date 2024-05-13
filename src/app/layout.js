@@ -3,6 +3,7 @@ import "./globals.css";
 import TheHeader from "./components/TheHeader";
 import TheFooter from "./components/TheFooter";
 import { roboto } from "./styles/fonts/fonts";
+import AOSLoader from "./utils/AOSLoader";
 
 export const metadata = {
   title: "Clutch Bowling",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <TheHeader />
         {children}
         <TheFooter />
+        <AOSLoader />
       </body>
     </html>
   );
