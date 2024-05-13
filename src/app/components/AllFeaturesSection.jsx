@@ -4,9 +4,10 @@ import { PiCrosshairBold } from "react-icons/pi";
 import { MdMultilineChart, MdAppSettingsAlt } from "react-icons/md";
 import { GoTrophy } from "react-icons/go";
 import { GiMagicPortal, GiLaserSparks, GiMeshNetwork } from "react-icons/gi";
-import { FaBowlingBall } from "react-icons/fa";
+import { FaArrowRight, FaBowlingBall } from "react-icons/fa";
 import { RiAdminLine } from "react-icons/ri";
 import { CgSync } from "react-icons/cg";
+import LinkButton from "./Buttons/LinkButton";
 
 export default function AllFeaturesSection() {
   return (
@@ -82,6 +83,14 @@ export default function AllFeaturesSection() {
             icon={<MdAppSettingsAlt />}
             title="Mobile App"
             content="Did we mention we have a mobile app? Our system was designed to give bowlers the freedom they want. Custom user profiles allow users to set their favorite effects, games, and even customize their training routine."
+          />
+        </div>
+        <div className="flex justify-center">
+          <LinkButton
+            variant="secondary"
+            linkText="Get pricing info"
+            linkTo="/pricing"
+            icon={<FaArrowRight />}
           />
         </div>
       </div>

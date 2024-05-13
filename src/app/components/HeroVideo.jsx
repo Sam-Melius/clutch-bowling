@@ -17,7 +17,12 @@ export default function HeroVideo() {
       </video>
 
       <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">
-        <div className="flex flex-col gap-2 md:gap-4 col-span-full">
+        <div
+          className="flex flex-col gap-2 md:gap-4 col-span-full"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-once="true"
+        >
           <h1 className="text-3xl md:text-6xl xl:text-8xl 2xl:text-8xl font-medium">
             The ultimate interactive
             <br />

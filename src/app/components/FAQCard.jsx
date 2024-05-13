@@ -17,7 +17,12 @@ export default function FAQCard({ faq }) {
   };
 
   return (
-    <div className="flex flex-col gap-4 border-b border-gray-400 pt-8 pb-4 w-full lg:w-2/3 xl:w-3/4 mx-auto">
+    <div
+      className="flex flex-col gap-4 border-b border-gray-400 pt-8 pb-4 w-full lg:w-2/3 xl:w-3/4 mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
       <div className="flex flex-row items-start justify-between gap-5">
         <button
           className="w-fit text-xl lg:text-2xl xl:text-3xl text-left"

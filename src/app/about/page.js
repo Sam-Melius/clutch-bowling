@@ -42,7 +42,12 @@ export default function AboutPage() {
       <section>
         <div className="flex flex-col h-full w-full">
           <div className="flex flex-col lg:flex-row lg:items-center gap-5 p-10">
-            <div className="flex flex-col gap-5 lg:w-1/2">
+            <div
+              className="flex flex-col gap-5 lg:w-1/2"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
               <h4 className="text-7xl 2xl:text-8xl">Built to impress.</h4>
               <p>
                 With precise tracking and crisp imaging we strive to immerse

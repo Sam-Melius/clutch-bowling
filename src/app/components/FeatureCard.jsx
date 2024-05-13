@@ -1,7 +1,12 @@
 export default function FeatureCard({ variant, icon, title, content }) {
   if (variant === "small") {
     return (
-      <div className="flex flex-col gap-3 col-span-1">
+      <div
+        className="flex flex-col gap-3 col-span-1"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
         <div className="flex flex-row items-center gap-3 xl:gap-4 text-xl text-clutchBlue-300">
           <h4 className="font-medium">{title}</h4>
           {icon}
@@ -11,7 +16,12 @@ export default function FeatureCard({ variant, icon, title, content }) {
     );
   } else if (variant === "large") {
     return (
-      <div className="flex flex-row items-center justify-start gap-5 col-span-1">
+      <div
+        className="flex flex-row items-center justify-start gap-5 col-span-1"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
         <div className="text-6xl lg:text-8xl text-clutchBlue-50">{icon}</div>
 
         <div className="flex flex-col gap-3 text-xl">

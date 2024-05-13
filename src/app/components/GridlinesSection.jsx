@@ -37,7 +37,12 @@ export default function GridlinesSection({
           ></div>
         ))}
         <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">
-          <div className="flex flex-col gap-2 md:gap-4 col-span-full">
+          <div
+            className="flex flex-col gap-2 md:gap-4 col-span-full"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <h4 className="text-5xl md:text-6xl lg:text-7xl xl:text-7xl p-5 md:p-10 lg:px-20 text-center">
               {heading}
             </h4>
@@ -90,7 +95,12 @@ export default function GridlinesSection({
           ></div>
         ))}
         <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">
-          <div className="flex flex-col gap-2 md:gap-4 col-span-full">
+          <div
+            className="flex flex-col gap-2 md:gap-4 col-span-full"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <h4 className="text-5xl md:text-6xl lg:text-7xl xl:text-7xl p-5 md:p-10 lg:px-20 text-center">
               {heading}
             </h4>
