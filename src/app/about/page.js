@@ -44,7 +44,7 @@ export default function AboutPage() {
           <div className="flex flex-col lg:flex-row lg:items-center gap-5 p-10">
             <div
               className="flex flex-col gap-5 lg:w-1/2"
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-once="true"
             >
