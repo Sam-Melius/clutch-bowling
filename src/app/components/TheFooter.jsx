@@ -65,9 +65,12 @@ export default function TheFooter() {
               sales@clutchbowling.com
             </a>
           </div>
-          <p className="text-xs text-gray-400 col-span-full text-center">
-            © 2024 Clutch Bowling. All Rights Reserved.
-          </p>
+          <div className="flex flex-col gap-y-4 lg:flex-row justify-between text-xs text-gray-400 col-span-full">
+            <Link href="/terms" className="font-medium hover-underline">
+              Terms & Conditions
+            </Link>
+            <p>© 2024 Clutch Bowling. All Rights Reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
