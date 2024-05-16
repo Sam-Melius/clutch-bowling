@@ -1,4 +1,6 @@
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
+import PatchNoteCard from "../components/PatchNoteCard";
+import { patchNotesData } from "../components/data/PatchNotes";
 
 export const metadata = {
   title: "Clutch Bowling | Patch Notes",
@@ -31,6 +33,13 @@ export default function PatchNotesPage() {
   return (
     <main>
       <HeadingAndBreadcrumbs pageHeading="Patch Notes" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 px-5 md:px-10 pt-10 pb-20">
+        {patchNotesData.map((patch, index) => (
+          <div key={index}>
+            <PatchNoteCard patchData={patch} />
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
