@@ -26,6 +26,13 @@ export default function PatchNoteCard({ patchData }) {
       .replace(/^./, (str) => str.toUpperCase()); // Capitalize the first letter
   };
 
+  const updatedAt = new Date(patchData._updatedAt);
+  const formattedDate = updatedAt.toLocaleDateString("en-US", {
+    month: "2-digit",
+    day: "2-digit",
+    year: "numeric",
+  });
+
   return (
     <>
       <div
@@ -80,17 +87,17 @@ export default function PatchNoteCard({ patchData }) {
           ref={modalRef}
           className="fixed top-0 left-0 bottom-0 right-0 w-full h-full flex justify-center items-center bg-black bg-opacity-70 z-[10000]"
         >
-          <div className="bg-primaryDark border border-gray-400 rounded-lg p-5 lg:p-10 relative flex flex-col gap-5 h-svh m-5 md:h-3/4 md:w-3/4 overflow-y-auto animate__animated animate__fadeIn animate__faster">
+          <div className="bg-primaryDark border border-gray-400 rounded-lg p-5 lg:p-10 relative flex flex-col gap-5 h-svh m-5 md:h-3/4 md:w-3/4 overflow-y-auto animate__animated animate__fadeIn animate__faster scrollbar-thumb-clutchBlue-400 scrollbar-thin scrollbar-track-transparent">
             <div className="flex flex-col gap-2 h-fit w-full border-b border-gray-600 pb-5">
               <p className="text-xs md:text-sm text-gray-400 lg:pl-1">
-                Updated: {patchData.updatedAt}
+                Updated: {formattedDate}
               </p>
               <h2 className="text-3xl md:text-4xl lg:text-7xl 2xl:text-8xl font-medium text-clutchBlue-300">
                 Patch Notes {patchData.patchNumber}
               </h2>
             </div>
 
-            <div className="flex h-fit w-full pb-3 border-b border-gray-600">
+            <div className="flex h-fit w-full pb-5 border-b border-gray-600">
               <h2 className="text-lg md:text-xl">{patchData.notes}</h2>
             </div>
 

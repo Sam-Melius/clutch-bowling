@@ -1,6 +1,7 @@
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
 import PatchNoteCard from "../components/PatchNoteCard";
 import { patchNotesData } from "../components/data/PatchNotes";
+import { client } from "../../../sanity/lib/client";
 
 export const metadata = {
   title: "Clutch Bowling | Patch Notes",
@@ -29,12 +30,16 @@ export const metadata = {
   ],
 };
 
-export default function PatchNotesPage() {
+export default async function PatchNotesPage() {
+  const data = await client.fetch(`
+  
+  *[_type == "PatchNotes"] | order(_createdAt desc)`);
+
   return (
     <main>
       <HeadingAndBreadcrumbs pageHeading="Patch Notes" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 px-5 md:px-10 pt-10 pb-20">
-        {patchNotesData.map((patch, index) => (
+        {data.map((patch, index) => (
           <div key={index}>
             <PatchNoteCard patchData={patch} />
           </div>

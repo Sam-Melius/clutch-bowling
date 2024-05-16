@@ -1,5 +1,5 @@
 export default {
-  name: "patchNotes",
+  name: "PatchNotes",
   title: "Patch Notes",
   type: "document",
   fields: [
