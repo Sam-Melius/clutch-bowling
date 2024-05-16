@@ -1,7 +1,7 @@
 export const patchNotesData = [
   {
-    patchNumber: "22.6",
-    updatedAt: "May 15, 2024",
+    patchNumber: "22.8",
+    updatedAt: "5/16/2024",
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     changes: {
@@ -41,7 +41,7 @@ export const patchNotesData = [
   },
   {
     patchNumber: "22.6",
-    updatedAt: "May 15, 2024",
+    updatedAt: "5/16/2024",
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     changes: {
@@ -81,7 +81,7 @@ export const patchNotesData = [
   },
   {
     patchNumber: "22.4",
-    updatedAt: "May 15, 2024",
+    updatedAt: "5/16/2024",
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     changes: {
@@ -113,7 +113,7 @@ export const patchNotesData = [
   },
   {
     patchNumber: "22.2",
-    updatedAt: "May 15, 2024",
+    updatedAt: "5/16/2024",
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     changes: {
@@ -141,7 +141,7 @@ export const patchNotesData = [
   },
   {
     patchNumber: "22.0.1",
-    updatedAt: "May 15, 2024",
+    updatedAt: "5/16/2024",
     notes:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     changes: {
