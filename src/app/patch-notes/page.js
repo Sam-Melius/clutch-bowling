@@ -32,8 +32,8 @@ export const metadata = {
 
 export default async function PatchNotesPage() {
   const data = await client.fetch(`
-  
-  *[_type == "PatchNotes"] | order(_createdAt desc)`);
+    *[_type == "PatchNotes"] | order(_createdAt desc)
+  `);
 
   return (
     <main>
