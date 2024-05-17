@@ -144,3 +144,7 @@ main {
     var(--primaryDark)
   );
 }
+
+.text-stroke {
+  -webkit-text-stroke: 0.5px var(--primaryDark);
+}

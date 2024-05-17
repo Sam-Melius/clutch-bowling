@@ -8,7 +8,7 @@ export default function HeroVideo() {
         autoPlay
         muted
         loop
-        className="w-full h-full object-cover "
+        className="w-full h-full object-cover"
         preload="auto"
         playsInline
       >
@@ -23,7 +23,7 @@ export default function HeroVideo() {
           data-aos-duration="1500"
           data-aos-once="true"
         >
-          <h1 className="text-3xl md:text-6xl xl:text-8xl 2xl:text-8xl font-medium">
+          <h1 className="text-3xl md:text-6xl xl:text-8xl 2xl:text-8xl font-medium text-stroke">
             The ultimate interactive
             <br />
             <span className="pl-1 md:pl-2.5 lg:pl-2.5 xl:pl-3 2xl:pl-4">
