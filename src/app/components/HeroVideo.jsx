@@ -8,7 +8,7 @@ export default function HeroVideo() {
         autoPlay
         muted
         loop
-        className="w-full h-full object-cover brightness-50"
+        className="w-full h-full object-cover brightness-75"
         preload="auto"
         playsInline
       >
