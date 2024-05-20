@@ -37,12 +37,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth overflow-y-auto overflow-x-clip">
       <body
-        className={`min-h-svh flex flex-col mx-auto relative ${roboto.className} antialiased`}
+        className={`min-h-svh max-w-full flex flex-col mx-auto relative ${roboto.className} antialiased overflow-y-auto overflow-x-clip`}
       >
         <NeonLasers />
-
         <TheHeader />
         {children}
         <TheFooter />

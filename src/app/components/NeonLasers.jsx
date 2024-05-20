@@ -30,13 +30,12 @@ export default function NeonLasers() {
   }));
 
   return (
-    <div className="fixed flex w-full h-full -z-40">
+    <div className="fixed top-0 left-0 right-0 w-full h-screen -z-40 overflow-clip">
       <svg
-        width="100%"
-        height="100%"
         viewBox="0 0 800 600"
         xmlns="http://www.w3.org/2000/svg"
-        className="-z-50 w-full h-full"
+        preserveAspectRatio="xMidYMid slice"
+        className="w-full h-full"
       >
         <defs>
           <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="0%">
