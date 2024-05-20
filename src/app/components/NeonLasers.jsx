@@ -107,7 +107,7 @@ export default function NeonLasers() {
         {lines.map((line, index) => (
           <line
             key={index}
-            className={`laser blur-sm hue-rotate-15 ${
+            className={`laser hue-rotate-15 ${
               line.counterClockwise ? "spin-counterclockwise" : "spin-clockwise"
             }`}
             x1={line.x1}
@@ -116,7 +116,11 @@ export default function NeonLasers() {
             y2={line.y2}
             stroke={`url(#${line.gradient})`}
             strokeWidth="4"
-            style={{ animationDuration: `${line.duration}s` }}
+            style={{
+              animationDuration: `${line.duration}s`,
+              filter:
+                "blur(0.25rem) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)",
+            }}
           />
         ))}
       </svg>
