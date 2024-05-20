@@ -30,7 +30,7 @@ export default function NeonLasers() {
   }));
 
   return (
-    <div className="hidden md:fixed top-0 left-0 right-0 w-full h-screen -z-40 overflow-clip">
+    <div className="fixed top-0 left-0 right-0 w-full h-screen -z-40 overflow-clip">
       <svg
         viewBox="0 0 800 600"
         xmlns="http://www.w3.org/2000/svg"

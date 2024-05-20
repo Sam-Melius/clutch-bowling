@@ -203,6 +203,14 @@ main {
 
 .laser {
   animation: glow 750ms infinite alternate;
+  --tw-blur: blur(4px);
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow) !important;
+
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
 
 .spin-clockwise {
