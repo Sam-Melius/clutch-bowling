@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { navLinksArray } from "./data/NavItems";
 import ContactButton from "./ContactButton";
+import NeonLasers from "./NeonLasers";
 
 export default function Menu() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -37,6 +38,8 @@ export default function Menu() {
 
       {isMenuOpen && (
         <div className="fixed inset-0 bg-primaryDark/90 text-white backdrop-blur-md z-[9000] animate__animated animate__slideInRight animate__fast">
+          <NeonLasers />
+
           <div className="flex flex-col h-full justify-start space-y-12 items-end mt-5 mr-5">
             <button
               onClick={toggleMenu}

@@ -23,10 +23,6 @@
   --clutchBlue-900: #118ad7;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--primaryDark);
   color: var(--primaryLight);
@@ -147,4 +143,72 @@ main {
 
 .text-stroke {
   -webkit-text-stroke: 0.5px var(--primaryDark);
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin-clockwise {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: top 50%;
+  }
+  25% {
+    transform: rotate(90deg);
+    transform-origin: top;
+  }
+  50% {
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
+  75% {
+    transform: rotate(270deg);
+    transform-origin: bottom 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: right 50%;
+  }
+}
+
+@keyframes spin-counterclockwise {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: top 50%;
+  }
+  25% {
+    transform: rotate(-90deg);
+    transform-origin: top;
+  }
+  50% {
+    transform: rotate(-180deg);
+    transform-origin: center;
+  }
+  75% {
+    transform: rotate(-270deg);
+    transform-origin: bottom 50%;
+  }
+  100% {
+    transform: rotate(-360deg);
+    transform-origin: right 50%;
+  }
+}
+
+.laser {
+  animation: glow 750ms infinite alternate;
+}
+
+.spin-clockwise {
+  animation: spin-clockwise 5s linear infinite;
+}
+
+.spin-counterclockwise {
+  animation: spin-counterclockwise 5s infinite;
 }

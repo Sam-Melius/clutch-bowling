@@ -1,7 +1,9 @@
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
 import PatchNoteCard from "../components/PatchNoteCard";
-import { patchNotesData } from "../components/data/PatchNotes";
+import GridlinesSection from "../components/GridlinesSection";
+import GradientSection from "../components/GradientSection";
 import { client } from "../../../sanity/lib/client";
+import PatchNotesSection from "../components/PatchNotesSection";
 
 export const metadata = {
   title: "Clutch Bowling | Patch Notes",
@@ -38,13 +40,17 @@ export default async function PatchNotesPage() {
   return (
     <main>
       <HeadingAndBreadcrumbs pageHeading="Patch Notes" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 px-5 md:px-10 pt-10 pb-20">
-        {data.map((patch, index) => (
-          <div key={index}>
-            <PatchNoteCard patchData={patch} />
-          </div>
-        ))}
-      </div>
+
+      <PatchNotesSection patchNotesData={data} />
+
+      <GradientSection size="small" variant="dark" isRotated />
+      <GridlinesSection
+        variant="small"
+        heading="Have a request for our next update?"
+        linkText="Get in touch"
+        isContact
+      />
+      <GradientSection size="small" variant="dark" />
     </main>
   );
 }
