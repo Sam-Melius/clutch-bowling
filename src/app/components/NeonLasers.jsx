@@ -107,7 +107,7 @@ export default function NeonLasers() {
         {lines.map((line, index) => (
           <line
             key={index}
-            className={`laser hue-rotate-15 !blur-[0.25rem] opacity-70 ${
+            className={`laser hue-rotate-15 !blur-sm opacity-40 lg:opacity-70 ${
               line.counterClockwise ? "spin-counterclockwise" : "spin-clockwise"
             }`}
             x1={line.x1}
