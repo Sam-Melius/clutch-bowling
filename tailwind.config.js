@@ -22,9 +22,6 @@ module.exports = {
         },
         primaryDark: "#181818",
       },
-      blur: {
-        sm: "0.25rem",
-      },
     },
   },
   plugins: [require("tailwind-scrollbar")({ nocompatible: true })],

@@ -30,7 +30,7 @@ export default function NeonLasers() {
   }));
 
   return (
-    <div className="fixed top-0 left-0 right-0 w-full h-screen -z-40 overflow-clip">
+    <div className="hidden md:fixed top-0 left-0 right-0 w-full h-screen -z-40 overflow-clip">
       <svg
         viewBox="0 0 800 600"
         xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ export default function NeonLasers() {
         {lines.map((line, index) => (
           <line
             key={index}
-            className={`laser hue-rotate-15 ${
+            className={`laser hue-rotate-15 blur-sm ${
               line.counterClockwise ? "spin-counterclockwise" : "spin-clockwise"
             }`}
             x1={line.x1}
@@ -118,8 +118,6 @@ export default function NeonLasers() {
             strokeWidth="4"
             style={{
               animationDuration: `${line.duration}s`,
-              filter:
-                "blur(0.25rem) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)",
             }}
           />
         ))}
