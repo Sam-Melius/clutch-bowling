@@ -5,7 +5,7 @@ export default function NeonLasers() {
   const getRandomCoordinate = (max) => Math.floor(Math.random() * max);
 
   // Helper function to generate random animation duration
-  const getRandomDuration = () => (Math.random() * 5 + 10).toFixed(2); // Between 5s and 12s
+  const getRandomDuration = () => (Math.random() * 10 + 15).toFixed(2);
 
   // Array of gradient IDs
   const gradients = [
@@ -107,7 +107,7 @@ export default function NeonLasers() {
         {lines.map((line, index) => (
           <line
             key={index}
-            className={`laser hue-rotate-15 blur-sm ${
+            className={`laser hue-rotate-15 blur-sm opacity-85 ${
               line.counterClockwise ? "spin-counterclockwise" : "spin-clockwise"
             }`}
             x1={line.x1}
