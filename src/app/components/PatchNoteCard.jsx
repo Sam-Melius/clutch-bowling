@@ -36,7 +36,7 @@ export default function PatchNoteCard({ patchData }) {
   return (
     <>
       <div
-        className="flex flex-col gap-3 h-full col-span-1 border border-gray-600 hover:border-gray-200 hover:bg-gray-500/20 text-clutchBlue-300 hover:text-white transition-all duration-500 rounded-lg w-auto hover:cursor-pointer p-5 bg-transparent backdrop-blur-lg"
+        className="flex flex-col gap-3 h-full col-span-1 border border-gray-600 hover:border-gray-200 hover:bg-gray-500/20 text-clutchBlue-300 hover:text-white transition-all duration-500 rounded-lg w-auto hover:cursor-pointer p-5 bg-transparent custom-backdrop-blur-lg"
         onClick={openModal}
         data-aos="fade-up"
         data-aos-duration="1000"
@@ -85,9 +85,9 @@ export default function PatchNoteCard({ patchData }) {
       {isModalOpen && (
         <div
           ref={modalRef}
-          className="fixed top-0 left-0 bottom-0 right-0 w-full h-full flex justify-center items-center bg-black backdrop-blur-sm bg-opacity-70 z-[10000]"
+          className="fixed top-0 left-0 bottom-0 right-0 w-full h-full flex justify-center items-center bg-black custom-backdrop-blur-sm bg-opacity-70 z-[10000]"
         >
-          <div className="bg-primaryDark/50 backdrop-blur-3xl border border-gray-400 rounded-lg p-5 lg:p-10 relative flex flex-col gap-5 h-svh m-5 md:h-3/4 md:w-3/4 overflow-y-auto animate__animated animate__fadeIn animate__faster scrollbar-thumb-clutchBlue-400 scrollbar-thin scrollbar-track-transparent">
+          <div className="bg-primaryDark/50 custom-backdrop-blur-3xl border border-gray-400 rounded-lg p-5 lg:p-10 relative flex flex-col gap-5 h-svh m-5 md:h-3/4 md:w-3/4 overflow-y-auto animate__animated animate__fadeIn animate__faster scrollbar-thumb-clutchBlue-400 scrollbar-thin scrollbar-track-transparent">
             <div className="flex flex-col gap-2 h-fit w-full border-b border-gray-600 pb-5">
               <p className="text-xs md:text-sm text-gray-400 lg:pl-1">
                 Updated: {formattedDate}

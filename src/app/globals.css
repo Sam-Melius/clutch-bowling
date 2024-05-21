@@ -214,5 +214,21 @@ main {
 }
 
 .blurry-filter {
+  -webkit-filter: blur(4px);
   filter: blur(4px);
+}
+
+.custom-backdrop-blur-sm {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.custom-backdrop-blur-lg {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.custom-backdrop-blur-3xl {
+  -webkit-backdrop-filter: blur(64px);
+  backdrop-filter: blur(64px);
 }

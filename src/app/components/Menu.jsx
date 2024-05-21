@@ -37,7 +37,7 @@ export default function Menu() {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-primaryDark/90 text-white backdrop-blur-md z-[9000] animate__animated animate__slideInRight animate__fast">
+        <div className="fixed inset-0 bg-primaryDark/90 text-white custom-backdrop-blur-lg z-[9000] animate__animated animate__slideInRight animate__fast">
           <NeonLasers />
 
           <div className="flex flex-col h-full justify-start space-y-12 items-end mt-5 mr-5">
