@@ -16,6 +16,8 @@ export default function HeroVideo() {
         Your browser does not support the video tag.
       </video>
 
+      <div className="absolute -z-30 w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center bg-primaryDark"></div>
+
       <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">
         <div
           className="flex flex-col gap-2 md:gap-4 col-span-full"

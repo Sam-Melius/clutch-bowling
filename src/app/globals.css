@@ -212,3 +212,7 @@ main {
 .spin-counterclockwise {
   animation: spin-counterclockwise 5s infinite;
 }
+
+.blurry-filter {
+  filter: blur(4px);
+}
