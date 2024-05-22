@@ -33,25 +33,27 @@ export const metadata = {
 };
 
 export default async function EffectsPage() {
-  const laneData = await client.fetch(`
-    *[_type == "laneEffects"]{
+  const data = await client.fetch(`
+  {
+    "laneEffects": *[_type == "laneEffects"] | order(name asc) {
       name,
       'imageUrl': image.asset->url,
       'height': image.asset->metadata.dimensions.height,
       'width': image.asset->metadata.dimensions.width,
       'blurDataUrl': image.asset->metadata.lqip,
-    } | order(name asc)
-  `);
+    },
+    "ballEffects": *[_type == "ballEffects"] | order(name asc) {
+      name,
+      'imageUrl': image.asset->url,
+      'height': image.asset->metadata.dimensions.height,
+      'width': image.asset->metadata.dimensions.width,
+      'blurDataUrl': image.asset->metadata.lqip,
+    }
+  }
+`);
 
-  const ballData = await client.fetch(`
-    *[_type == "ballEffects"]{
-      name,
-      'imageUrl': image.asset->url,
-      'height': image.asset->metadata.dimensions.height,
-      'width': image.asset->metadata.dimensions.width,
-      'blurDataUrl': image.asset->metadata.lqip,
-    } | order(name asc)
-  `);
+  const laneData = data.laneEffects;
+  const ballData = data.ballEffects;
 
   return (
     <main>
@@ -60,7 +62,7 @@ export default async function EffectsPage() {
         id="all-effects"
         className="flex flex-col gap-20 px-5 md:px-10 pt-10 pb-20"
       >
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5 lg:gap-10 ">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-10 gap-5 lg:gap-10 ">
           <h2 className="col-span-full text-3xl font-medium">
             Available Lane Effects
           </h2>
@@ -70,7 +72,7 @@ export default async function EffectsPage() {
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-5 lg:gap-10 ">
+        <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 2xl:grid-cols-12 gap-5 lg:gap-10 ">
           <h2 className="col-span-full text-3xl font-medium">
             Available Ball Effects
           </h2>

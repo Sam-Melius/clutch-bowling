@@ -5,7 +5,7 @@ export default function BallEffectCard({ effectData }) {
     <Image
       src={effectData.imageUrl}
       alt={effectData.name}
-      className="h-fit w-full object-cover rounded-lg hover:rotate-[360deg] transition duration-200 hover:duration-700"
+      className="h-auto w-full object-cover rounded-lg"
       placeholder="blur"
       blurDataURL={effectData.blurDataUrl}
       height={effectData.height}

@@ -15,18 +15,14 @@ export default function Menu() {
     };
 
     toggleBodyScroll();
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
+  }, [isMenuOpen]);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
   return (
-    <nav>
+    <nav className="fixed top-5 right-5">
       <div className={isMenuOpen ? "hidden" : "flex flex-row"}>
         <button
           onClick={toggleMenu}
@@ -37,7 +33,7 @@ export default function Menu() {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-primaryDark/90 text-white custom-backdrop-blur-lg z-[9000] animate__animated animate__slideInRight animate__fast">
+        <div className="fixed top-0 right-0 m-0 h-full w-full lg:w-1/2 xl:w-1/3 bg-primaryDark/95 text-white custom-backdrop-blur-lg z-[9000] animate__animated animate__slideInRight animate__fast">
           <NeonLasers />
 
           <div className="flex flex-col h-full justify-between items-end p-5">
@@ -52,12 +48,12 @@ export default function Menu() {
                 key={index}
                 href={item.linkTo}
                 onClick={toggleMenu}
-                className="text-2xl lg:text-4xl xl:text-5xl hover:text-clutchBlue-700 transition duration-300"
+                className="text-2xl md:text-5xl xl:text-5xl 2xl:text-7xl hover:text-clutchBlue-700 transition duration-300"
               >
                 {item.text}
               </Link>
             ))}
-            <p className="text-2xl lg:text-4xl xl:text-5xl hover:text-clutchBlue-700 transition duration-300">
+            <p className="text-2xl md:text-5xl xl:text-5xl 2xl:text-7xl hover:text-clutchBlue-700 transition duration-300">
               <ContactButton buttonText="Contact Us" />
             </p>
           </div>
