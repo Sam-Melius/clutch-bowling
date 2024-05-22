@@ -11,7 +11,7 @@ import LinkButton from "./Buttons/LinkButton";
 
 export default function AllFeaturesSection() {
   return (
-    <section id="all-features" className="px-5 lg:p-10 py-20">
+    <section id="all-features" className="px-5 lg:p-10 py-20 lg:py-24">
       <div className="flex flex-col gap-10 lg:gap-20">
         <h3 className="col-span-full text-4xl md:text-5xl text-center">
           All Features
@@ -88,8 +88,8 @@ export default function AllFeaturesSection() {
         <div className="flex justify-center">
           <LinkButton
             variant="secondary"
-            linkText="Get pricing info"
-            linkTo="/pricing"
+            linkText="See all effects"
+            linkTo="/effects"
             icon={<FaArrowRight />}
           />
         </div>

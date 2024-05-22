@@ -2,7 +2,8 @@ import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
 import GridlinesSection from "../components/GridlinesSection";
 import GradientSection from "../components/GradientSection";
 import { client } from "../../../sanity/lib/client";
-import PatchNotesSection from "../components/PatchNotesSection";
+import BallEffectCard from "../components/BallEffectCard";
+import LaneEffectCard from "../components/LaneEffectCard";
 
 export const metadata = {
   title: "Clutch Bowling | Effects",
@@ -32,25 +33,63 @@ export const metadata = {
 };
 
 export default async function EffectsPage() {
-  // const data = await client.fetch(`
-  //   *[_type == "effects"]
-  // `);
+  const laneData = await client.fetch(`
+    *[_type == "laneEffects"]{
+      name,
+      'imageUrl': image.asset->url,
+      'height': image.asset->metadata.dimensions.height,
+      'width': image.asset->metadata.dimensions.width,
+      'blurDataUrl': image.asset->metadata.lqip,
+    } | order(name asc)
+  `);
+
+  const ballData = await client.fetch(`
+    *[_type == "ballEffects"]{
+      name,
+      'imageUrl': image.asset->url,
+      'height': image.asset->metadata.dimensions.height,
+      'width': image.asset->metadata.dimensions.width,
+      'blurDataUrl': image.asset->metadata.lqip,
+    } | order(name asc)
+  `);
 
   return (
     <main>
       <HeadingAndBreadcrumbs pageHeading="Effects" />
-      {/* 
-      Effects Section goes here
-      <EffectsSection effectsData={data} /> */}
+      <section
+        id="all-effects"
+        className="flex flex-col gap-20 px-5 md:px-10 pt-10 pb-20"
+      >
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5 lg:gap-10 ">
+          <h2 className="col-span-full text-3xl font-medium">
+            Available Lane Effects
+          </h2>
+          {laneData.map((effect, index) => (
+            <div key={index}>
+              <LaneEffectCard effectData={effect} />
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-5 lg:gap-10 ">
+          <h2 className="col-span-full text-3xl font-medium">
+            Available Ball Effects
+          </h2>
+          {ballData.map((effect, index) => (
+            <div key={index}>
+              <BallEffectCard effectData={effect} />
+            </div>
+          ))}
+        </div>
+      </section>
 
-      {/* <GradientSection size="small" variant="dark" isRotated />
+      <GradientSection size="small" variant="dark" isRotated />
       <GridlinesSection
         variant="small"
         heading="Have an idea for a new effect?"
         linkText="Get in touch"
         isContact
       />
-      <GradientSection size="small" variant="dark" /> */}
+      <GradientSection size="small" variant="dark" />
     </main>
   );
 }
