@@ -8,6 +8,10 @@ export const navLinksArray = [
     linkTo: "/about",
   },
   {
+    text: "Effects",
+    linkTo: "/effects",
+  },
+  {
     text: "Pricing",
     linkTo: "/pricing",
   },
@@ -18,5 +22,9 @@ export const navLinksArray = [
   {
     text: "Patch Notes",
     linkTo: "/patch-notes",
+  },
+  {
+    text: "Clutch Centers",
+    linkTo: "/clutch-centers",
   },
 ];

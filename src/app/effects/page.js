@@ -5,12 +5,12 @@ import { client } from "../../../sanity/lib/client";
 import PatchNotesSection from "../components/PatchNotesSection";
 
 export const metadata = {
-  title: "Clutch Bowling | Patch Notes",
+  title: "Clutch Bowling | Effects",
   description: "The ultimate interactive bowling experience",
   keywords:
     "Bowling, interactive bowling, cosmic bowling, immersive bowling, unreal bowling, training, games, bowling experience",
   openGraph: {
-    title: "Clutch Bowling | Patch Notes",
+    title: "Clutch Bowling | Effects",
     description: "The ultimate interactive bowling experience",
     siteName: "Clutch Bowling",
     type: "website",
@@ -31,25 +31,26 @@ export const metadata = {
   ],
 };
 
-export default async function PatchNotesPage() {
-  const data = await client.fetch(`
-    *[_type == "PatchNotes"] | order(_createdAt desc)
-  `);
+export default async function EffectsPage() {
+  // const data = await client.fetch(`
+  //   *[_type == "effects"]
+  // `);
 
   return (
     <main>
-      <HeadingAndBreadcrumbs pageHeading="Patch Notes" />
+      <HeadingAndBreadcrumbs pageHeading="Effects" />
+      {/* 
+      Effects Section goes here
+      <EffectsSection effectsData={data} /> */}
 
-      <PatchNotesSection patchNotesData={data} />
-
-      <GradientSection size="small" variant="dark" isRotated />
+      {/* <GradientSection size="small" variant="dark" isRotated />
       <GridlinesSection
         variant="small"
-        heading="Have a request for our next update?"
+        heading="Have an idea for a new effect?"
         linkText="Get in touch"
         isContact
       />
-      <GradientSection size="small" variant="dark" />
+      <GradientSection size="small" variant="dark" /> */}
     </main>
   );
 }

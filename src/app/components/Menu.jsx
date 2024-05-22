@@ -19,7 +19,7 @@ export default function Menu() {
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [isMenuOpen]);
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -40,7 +40,7 @@ export default function Menu() {
         <div className="fixed inset-0 bg-primaryDark/90 text-white custom-backdrop-blur-lg z-[9000] animate__animated animate__slideInRight animate__fast">
           <NeonLasers />
 
-          <div className="flex flex-col h-full justify-start space-y-12 items-end mt-5 mr-5">
+          <div className="flex flex-col h-full justify-between items-end p-5">
             <button
               onClick={toggleMenu}
               className="z-[9991] underline underline-offset-4 hover-underline"
@@ -52,12 +52,12 @@ export default function Menu() {
                 key={index}
                 href={item.linkTo}
                 onClick={toggleMenu}
-                className="text-3xl lg:text-5xl hover:text-clutchBlue-700 transition duration-300"
+                className="text-2xl lg:text-4xl xl:text-5xl hover:text-clutchBlue-700 transition duration-300"
               >
                 {item.text}
               </Link>
             ))}
-            <p className="text-3xl lg:text-5xl hover:text-clutchBlue-700 transition duration-300">
+            <p className="text-2xl lg:text-4xl xl:text-5xl hover:text-clutchBlue-700 transition duration-300">
               <ContactButton buttonText="Contact Us" />
             </p>
           </div>

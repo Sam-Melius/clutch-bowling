@@ -11,7 +11,7 @@ export default function TheFooter() {
       className="px-10 py-20 pb-5 lg:p-10 lg:py-20 lg:pb-5 w-full h-fit"
     >
       <div className="flex flex-col gap-10">
-        <div className="grid gap-x-10 gap-y-20 grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-x-10 gap-y-20 grid-cols-2 lg:grid-cols-4">
           {navLinksArray.map((item, index) => (
             <Link
               key={index}
