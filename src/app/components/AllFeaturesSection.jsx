@@ -88,7 +88,7 @@ export default function AllFeaturesSection() {
         <div className="flex justify-center">
           <LinkButton
             variant="secondary"
-            linkText="See all effects"
+            linkText="View all effects"
             linkTo="/effects"
             icon={<FaArrowRight />}
           />
