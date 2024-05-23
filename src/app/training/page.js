@@ -33,7 +33,6 @@ export default function TrainingPage() {
     <main>
       <HeroVideoAlt
         videoUrl="/videos/clutch-bowling-training.mp4"
-        breadcrumbHeading="Training"
         mainHeading="Top-notch training."
         subheading="Clutch technology enhances training by providing real-time
         tracking, feedback, and immersive visuals. This innovative

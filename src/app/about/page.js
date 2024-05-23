@@ -35,7 +35,6 @@ export default function AboutPage() {
     <main>
       <HeroVideoAlt
         videoUrl="/videos/clutch-bowling.mp4"
-        breadcrumbHeading="About"
         mainHeading="Built to impress."
         subheading="With precise tracking and crisp imaging we strive to immerse
         bowlers of all ages in our system. Clutch Bowling is a new kind of
