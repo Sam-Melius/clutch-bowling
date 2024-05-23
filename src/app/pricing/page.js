@@ -32,7 +32,7 @@ export default function PricingPage() {
   return (
     <main>
       <HeroVideoAlt
-        videoUrl="/videos/clutch-bowling-training.mp4"
+        videoUrl="/videos/clutch-bowling-demo.mp4"
         mainHeading="Pricing that pleases."
         subheading="Our install packages are designed to deliver exceptional value and a strong return on investment. Choose from a range of tailored options that meet your needs and budget, ensuring you get the best solution and ROI for your bowling center."
         isContact

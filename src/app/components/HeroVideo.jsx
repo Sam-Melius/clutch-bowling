@@ -12,7 +12,7 @@ export default function HeroVideo() {
         preload="auto"
         playsInline
       >
-        <source src="/videos/clutch-bowling-demo.mp4" type="video/mp4" />
+        <source src="/videos/clutch-bowling.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

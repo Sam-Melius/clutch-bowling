@@ -36,7 +36,7 @@ export default function HeroVideoAlt({
             data-aos-duration="1000"
             data-aos-once="true"
           >
-            <h4 className="text-7xl md:text-8xl lg:text-8xl xl:text-9xl text-stroke">
+            <h4 className="text-7xl md:text-8xl 2xl:text-9xl text-stroke">
               {mainHeading}
             </h4>
             <p className="2xl:text-xl">{subheading}</p>
