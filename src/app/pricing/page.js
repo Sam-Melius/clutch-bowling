@@ -1,4 +1,4 @@
-import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
+import HeroVideoAlt from "../components/HeroVideoAlt";
 
 export const metadata = {
   title: "Clutch Bowling | Pricing",
@@ -31,7 +31,13 @@ export const metadata = {
 export default function PricingPage() {
   return (
     <main>
-      <HeadingAndBreadcrumbs pageHeading="Pricing" />
+      <HeroVideoAlt
+        videoUrl="/videos/clutch-bowling-training.mp4"
+        mainHeading="Pricing that pleases."
+        subheading="Our install packages are designed to deliver exceptional value and a strong return on investment. Choose from a range of tailored options that meet your needs and budget, ensuring you get the best solution and ROI for your bowling center."
+        isContact
+        linkText="Contact for pricing"
+      />
     </main>
   );
 }
