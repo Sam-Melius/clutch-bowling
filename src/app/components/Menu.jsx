@@ -34,7 +34,7 @@ export default function Menu() {
 
       {isMenuOpen && (
         <div className="fixed top-0 right-0 m-0 h-full w-full bg-primaryDark/95 text-white custom-backdrop-blur-lg z-[9000] animate__animated animate__slideInRight animate__fast 2xl:animate__faster">
-          {/* <NeonLasers /> */}
+          <NeonLasers />
           <div className="flex flex-col h-full justify-between items-end p-5">
             <button
               onClick={toggleMenu}
@@ -47,12 +47,12 @@ export default function Menu() {
                 key={index}
                 href={item.linkTo}
                 onClick={toggleMenu}
-                className="text-6xl md:text-7xl xl:text-7xl 2xl:text-9xl hover:text-clutchBlue-700 transition duration-300"
+                className="text-5xl md:text-7xl xl:text-7xl 2xl:text-9xl hover:text-clutchBlue-700 transition duration-300"
               >
                 {item.text}
               </Link>
             ))}
-            <p className="text-6xl md:text-7xl xl:text-7xl 2xl:text-9xl hover:text-clutchBlue-700 transition duration-300">
+            <p className="text-5xl md:text-7xl xl:text-7xl 2xl:text-9xl hover:text-clutchBlue-700 transition duration-300">
               <ContactButton buttonText="Contact Us" />
             </p>
           </div>

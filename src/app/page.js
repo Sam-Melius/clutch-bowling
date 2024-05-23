@@ -3,6 +3,7 @@ import KeyFeaturesSection from "./components/KeyFeaturesSection";
 import GradientSection from "./components/GradientSection";
 import TrustedBySection from "./components/TrustedBySection";
 import GridlinesSection from "./components/GridlinesSection";
+import NeonLasers from "./components/NeonLasers";
 
 export const metadata = {
   title: "Clutch Bowling",
@@ -35,7 +36,6 @@ export default function Home() {
   return (
     <main>
       <HeroVideo />
-      <TrustedBySection />
       <GridlinesSection
         variant="large"
         id="mission"
@@ -44,16 +44,9 @@ export default function Home() {
         linkText="See how"
         linkTo="#key-features"
       />
-      {/* <GradientSection size="small" variant="dark" /> */}
+      <NeonLasers />
       <KeyFeaturesSection />
-      {/* <GradientSection size="small" variant="dark" isRotated /> */}
-      <GridlinesSection
-        variant="small"
-        heading="Have questions?"
-        linkText="View our FAQs"
-        linkTo="/frequently-asked-questions"
-      />
-      {/* <GradientSection size="small" variant="dark" /> */}
+      <TrustedBySection />
     </main>
   );
 }

@@ -6,7 +6,6 @@ import { roboto } from "./styles/fonts/fonts";
 import AOSLoader from "./utils/AOSLoader";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
-import NeonLasers from "./components/NeonLasers";
 
 export const metadata = {
   title: "Clutch Bowling",
@@ -41,7 +40,6 @@ export default function RootLayout({ children }) {
       <body
         className={`min-h-svh max-w-full flex flex-col mx-auto relative ${roboto.className} antialiased overflow-y-auto overflow-x-clip`}
       >
-        <NeonLasers />
         <TheHeader />
         {children}
         <TheFooter />

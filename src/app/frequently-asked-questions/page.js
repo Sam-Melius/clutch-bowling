@@ -2,6 +2,7 @@ import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
 import GradientSection from "../components/GradientSection";
 import GridlinesSection from "../components/GridlinesSection";
 import FAQCard from "../components/FAQCard";
+import NeonLasers from "../components/NeonLasers";
 
 export const metadata = {
   title: "Clutch Bowling | FAQs",
@@ -74,7 +75,6 @@ export default function FAQsPage() {
   return (
     <main>
       <HeadingAndBreadcrumbs pageHeading="FAQs" />
-
       <section className="flex flex-col h-full w-full px-5 lg:px-10 pt-10 pb-20">
         <ul>
           {FAQsArray.map((question, index) => (
