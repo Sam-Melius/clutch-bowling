@@ -8,11 +8,11 @@ export default function HeroVideo() {
         autoPlay
         muted
         loop
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover brightness-105"
         preload="auto"
         playsInline
       >
-        <source src="/videos/clutch-bowling.mp4" type="video/mp4" />
+        <source src="/videos/clutch-bowling-demo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
