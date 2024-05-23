@@ -57,7 +57,7 @@ export default async function EffectsPage() {
   return (
     <main>
       <HeroVideoAlt
-        videoUrl="/videos/clutch-bowling.mp4"
+        videoUrl="/videos/clutch-lane-effects.mp4"
         mainHeading="Enthralling effects."
         subheading="We enhance the typical bowling experience with advanced lane and
         ball effects. Our technology creates dynamic projection-mapped
