@@ -21,6 +21,12 @@ export default function Sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/training`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/pricing`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -31,6 +37,12 @@ export default function Sitemap() {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/clutch-centers`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
     },
   ];
 }

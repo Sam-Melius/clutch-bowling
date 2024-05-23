@@ -1,11 +1,10 @@
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
 import GridlinesSection from "../components/GridlinesSection";
-import GradientSection from "../components/GradientSection";
 import { client } from "../../../sanity/lib/client";
-import PatchNotesSection from "../components/PatchNotesSection";
 
 export const metadata = {
   title: "Clutch Bowling | Centers",
+  url: "https://clutchbowling.com/clutch-centers",
   description: "The ultimate interactive bowling experience",
   keywords:
     "Bowling, interactive bowling, cosmic bowling, immersive bowling, unreal bowling, training, games, bowling experience",
@@ -15,7 +14,7 @@ export const metadata = {
     siteName: "Clutch Bowling",
     type: "website",
     locale: "en_US",
-    url: "https://clutchbowling.com",
+    url: "https://clutchbowling.com/clutch-centers",
     images: [
       {
         url: "https://clutchbowling.com/images/og-image.png",

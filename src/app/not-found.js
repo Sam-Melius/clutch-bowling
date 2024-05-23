@@ -5,7 +5,6 @@ import LinkButton from "./components/Buttons/LinkButton";
 import { FaArrowRight } from "react-icons/fa";
 import HeadingAndBreadcrumbs from "./components/HeadingAndBreadcrumbs";
 import GridlinesSection from "./components/GridlinesSection";
-import GradientSection from "./components/GradientSection";
 
 export default function Error({ error }) {
   useEffect(() => {
@@ -33,15 +32,12 @@ export default function Error({ error }) {
           </div>
         </div>
       </section>
-
-      <GradientSection variant="dark" size="small" isRotated />
       <GridlinesSection
         variant="small"
         heading="Want to get in touch?"
         linkText="Contact us"
         isContact
       />
-      <GradientSection variant="dark" size="small" />
     </main>
   );
 }

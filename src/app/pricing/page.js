@@ -2,6 +2,7 @@ import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
 
 export const metadata = {
   title: "Clutch Bowling | Pricing",
+  url: "https://clutchbowling.com/pricing",
   description: "The ultimate interactive bowling experience",
   keywords:
     "Bowling, interactive bowling, cosmic bowling, immersive bowling, unreal bowling, training, games, bowling experience",
@@ -11,7 +12,7 @@ export const metadata = {
     siteName: "Clutch Bowling",
     type: "website",
     locale: "en_US",
-    url: "https://clutchbowling.com",
+    url: "https://clutchbowling.com/pricing",
     images: [
       {
         url: "https://clutchbowling.com/images/og-image.png",

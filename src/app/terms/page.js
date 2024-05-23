@@ -1,10 +1,10 @@
 import SmallHeadingAndText from "../components/SmallHeadingAndText";
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
-import GradientSection from "../components/GradientSection";
 import GridlinesSection from "../components/GridlinesSection";
 
 export const metadata = {
   title: "Clutch Bowling | Terms of Service",
+  url: "https://clutchbowling.com/terms",
   description: "The ultimate interactive bowling experience",
   keywords:
     "Bowling, interactive bowling, cosmic bowling, immersive bowling, unreal bowling, training, games, bowling experience",
@@ -14,7 +14,7 @@ export const metadata = {
     siteName: "Clutch Bowling",
     type: "website",
     locale: "en_US",
-    url: "https://clutchbowling.com",
+    url: "https://clutchbowling.com/terms",
     images: [
       {
         url: "https://clutchbowling.com/images/og-image.png",
@@ -77,7 +77,6 @@ export default async function TermsPage() {
   return (
     <main>
       <HeadingAndBreadcrumbs pageHeading="Terms of Service" />
-
       <section className="flex flex-col gap-10 h-full px-5 md:px-10 pt-10 pb-20 w-full lg:w-2/3 xl:w-3/4 mx-auto">
         <p>
           These Terms of Service ('Terms') govern your use of the Clutch Bowling
@@ -97,17 +96,12 @@ export default async function TermsPage() {
           ))}
         </ul>
       </section>
-
-      <GradientSection variant="dark" size="small" isRotated />
-
       <GridlinesSection
         variant="small"
         heading="For any questions about these Terms, please contact us!"
         linkText="Get in touch"
         isContact
       />
-
-      <GradientSection variant="dark" size="small" />
     </main>
   );
 }

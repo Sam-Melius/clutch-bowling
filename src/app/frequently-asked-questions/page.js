@@ -1,12 +1,11 @@
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
-import GradientSection from "../components/GradientSection";
 import GridlinesSection from "../components/GridlinesSection";
 import FAQCard from "../components/FAQCard";
-import NeonLasers from "../components/NeonLasers";
 
 export const metadata = {
   title: "Clutch Bowling | FAQs",
   description: "The ultimate interactive bowling experience",
+  url: "https://clutchbowling.com/frequently-asked-questions",
   keywords:
     "Bowling, interactive bowling, cosmic bowling, immersive bowling, unreal bowling, training, games, bowling experience",
   openGraph: {
@@ -15,7 +14,7 @@ export const metadata = {
     siteName: "Clutch Bowling",
     type: "website",
     locale: "en_US",
-    url: "https://clutchbowling.com",
+    url: "https://clutchbowling.com/frequently-asked-questions",
     images: [
       {
         url: "https://clutchbowling.com/images/og-image.png",
@@ -85,16 +84,12 @@ export default function FAQsPage() {
         </ul>
       </section>
 
-      {/* <GradientSection variant="dark" size="small" isRotated /> */}
-
       <GridlinesSection
         variant="small"
         heading="Didn't answer your question?"
         linkText="Get in touch"
         isContact
       />
-
-      {/* <GradientSection variant="dark" size="small" /> */}
     </main>
   );
 }

@@ -8,6 +8,10 @@ export const navLinksArray = [
     linkTo: "/effects",
   },
   {
+    text: "Training",
+    linkTo: "/training",
+  },
+  {
     text: "Pricing",
     linkTo: "/pricing",
   },
@@ -33,6 +37,10 @@ export const footerNavLinks = [
   {
     text: "Effects",
     linkTo: "/effects",
+  },
+  {
+    text: "Training",
+    linkTo: "/training",
   },
   {
     text: "Pricing",

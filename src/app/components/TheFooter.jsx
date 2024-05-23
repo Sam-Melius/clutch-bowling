@@ -33,7 +33,8 @@ export default function TheFooter() {
             ))}
           </ul>
         </div>
-        <div className="flex flex-col gap-1">
+
+        {/* <div className="flex flex-col gap-1">
           <p className="font-medium">Physical Address</p>
           <a
             href="https://maps.app.goo.gl/zoq8vx7NMeZvhW6D7"
@@ -43,7 +44,7 @@ export default function TheFooter() {
             370 Belmont St NE <br />
             Salem, OR 97301
           </a>
-        </div>
+        </div> */}
 
         <div className="flex flex-col gap-1">
           <p className="font-medium">Phone</p>
