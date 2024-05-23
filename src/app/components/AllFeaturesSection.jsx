@@ -11,7 +11,7 @@ import LinkButton from "./Buttons/LinkButton";
 
 export default function AllFeaturesSection() {
   return (
-    <section id="all-features" className="px-5 lg:p-10 py-20 lg:py-24">
+    <section id="all-features" className="px-5 lg:p-10 py-20 lg:my-10">
       <div className="flex flex-col gap-10 lg:gap-20">
         <h3 className="col-span-full text-4xl md:text-5xl text-center">
           All Features

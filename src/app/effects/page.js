@@ -84,14 +84,14 @@ export default async function EffectsPage() {
         </div>
       </section>
 
-      <GradientSection size="small" variant="dark" isRotated />
+      {/* <GradientSection size="small" variant="dark" isRotated /> */}
       <GridlinesSection
         variant="small"
         heading="Have an idea for a new effect?"
         linkText="Get in touch"
         isContact
       />
-      <GradientSection size="small" variant="dark" />
+      {/* <GradientSection size="small" variant="dark" /> */}
     </main>
   );
 }

@@ -42,14 +42,14 @@ export default async function PatchNotesPage() {
 
       <PatchNotesSection patchNotesData={data} />
 
-      <GradientSection size="small" variant="dark" isRotated />
+      {/* <GradientSection size="small" variant="dark" isRotated /> */}
       <GridlinesSection
         variant="small"
         heading="Have a request for our next update?"
         linkText="Get in touch"
         isContact
       />
-      <GradientSection size="small" variant="dark" />
+      {/* <GradientSection size="small" variant="dark" /> */}
     </main>
   );
 }

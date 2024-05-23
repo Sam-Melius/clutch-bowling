@@ -7,7 +7,7 @@ export default function FeatureCard({ variant, icon, title, content }) {
         data-aos-duration="1000"
         data-aos-once="true"
       >
-        <div className="flex flex-row items-center gap-3 xl:gap-4 text-xl text-clutchBlue-300">
+        <div className="flex flex-row items-center gap-3 xl:gap-4 text-xl lg:text-lg xl:text-xl 2xl:text-2xl text-clutchBlue-300">
           <h4 className="font-medium">{title}</h4>
           {icon}
         </div>

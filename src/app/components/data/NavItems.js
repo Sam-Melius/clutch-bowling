@@ -1,5 +1,24 @@
 export const navLinksArray = [
   {
+    text: "About",
+    linkTo: "/about",
+  },
+  {
+    text: "Effects",
+    linkTo: "/effects",
+  },
+  {
+    text: "Pricing",
+    linkTo: "/pricing",
+  },
+  {
+    text: "FAQs",
+    linkTo: "/frequently-asked-questions",
+  },
+];
+
+export const footerNavLinks = [
+  {
     text: "Home",
     linkTo: "/",
   },

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinksArray } from "./data/NavItems";
+import { footerNavLinks } from "./data/NavItems";
 import SocialIcon from "./Socials/SocialIcon";
 import { socialsArray } from "./data/Socials";
 import ContactButton from "./ContactButton";
@@ -8,10 +8,10 @@ export default function TheFooter() {
   return (
     <footer
       id="footer"
-      className="px-10 py-20 pb-5 lg:py-16 lg:pb-5 w-full h-fit"
+      className="px-10 py-20 pb-5 lg:py-16 lg:pb-5 w-full h-fit bg-primaryDark"
     >
       <div className="grid gap-x-10 gap-y-20 grid-cols-2 lg:grid-cols-4">
-        {navLinksArray.map((item, index) => (
+        {footerNavLinks.map((item, index) => (
           <Link
             key={index}
             href={item.linkTo}

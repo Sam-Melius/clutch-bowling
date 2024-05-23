@@ -44,16 +44,16 @@ export default function Home() {
         linkText="See how"
         linkTo="#key-features"
       />
-      <GradientSection size="small" variant="dark" />
+      {/* <GradientSection size="small" variant="dark" /> */}
       <KeyFeaturesSection />
-      <GradientSection size="small" variant="dark" isRotated />
+      {/* <GradientSection size="small" variant="dark" isRotated /> */}
       <GridlinesSection
         variant="small"
         heading="Have questions?"
         linkText="View our FAQs"
         linkTo="/frequently-asked-questions"
       />
-      <GradientSection size="small" variant="dark" />
+      {/* <GradientSection size="small" variant="dark" /> */}
     </main>
   );
 }

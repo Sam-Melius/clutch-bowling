@@ -39,18 +39,13 @@ export default async function ClutchCentersPage() {
   return (
     <main>
       <HeadingAndBreadcrumbs pageHeading="Clutch Centers" />
-      {/* 
-      Centers Section goes here
-      <CentersSection centersData={data} /> */}
 
-      {/* <GradientSection size="small" variant="dark" isRotated />
-      <GridlinesSection
+      {/* <GridlinesSection
         variant="small"
         heading="Interested in becoming a Clutch Bowling Center?"
         linkText="Get in touch"
         isContact
-      />
-      <GradientSection size="small" variant="dark" /> */}
+      /> */}
     </main>
   );
 }

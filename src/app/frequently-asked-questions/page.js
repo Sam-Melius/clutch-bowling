@@ -85,7 +85,7 @@ export default function FAQsPage() {
         </ul>
       </section>
 
-      <GradientSection variant="dark" size="small" isRotated />
+      {/* <GradientSection variant="dark" size="small" isRotated /> */}
 
       <GridlinesSection
         variant="small"
@@ -94,7 +94,7 @@ export default function FAQsPage() {
         isContact
       />
 
-      <GradientSection variant="dark" size="small" />
+      {/* <GradientSection variant="dark" size="small" /> */}
     </main>
   );
 }
