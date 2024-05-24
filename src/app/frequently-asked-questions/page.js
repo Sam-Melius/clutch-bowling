@@ -1,6 +1,7 @@
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
 import GridlinesSection from "../components/GridlinesSection";
 import FAQCard from "../components/FAQCard";
+import { client } from "../../../sanity/lib/client";
 
 export const metadata = {
   title: "Clutch Bowling | FAQs",
@@ -30,55 +31,21 @@ export const metadata = {
   ],
 };
 
-const FAQsArray = [
-  {
-    question: "How can I get Clutch Bowling installed in my bowling center?",
-    answer:
-      "Send us a message through our contact form and we will get back to you as soon as possible with our available options and pricing for installation!",
-  },
-  {
-    question: "I have an idea for an effect, can you make it?",
-    answer:
-      "If you can dream it, we can build it! Send us a message through the contact form, and we will put your idea into consideration!",
-  },
-  {
-    question:
-      "Are there any restrictions on who can use the Clutch Bowling system?",
-    answer:
-      "Clutch Bowling is suitable for bowlers of all ages and abilities. If you can put the ball on the lane, we can do something amazing with it!",
-  },
-  {
-    question: "How many effects are available?",
-    answer:
-      "Currently we have over 100 effects in use, but many more are currently in production! If you have any ideas for possible effects, we would love to hear from you!",
-  },
-  {
-    question: "What coaching tools are available?",
-    answer:
-      "One of our favorites we have is a target simulation where bowlers can practice their accuracy by hitting targets at a range of distances and sizes. We are frequently adding new tools to help users improve their bowling skill!",
-  },
-  {
-    question:
-      "Can I use different effects on different lanes, at the same time?",
-    answer:
-      "Yes! As the proprietor, you will have complete control over what is on the lanes. Additionally, with our new mobile app, you'll be able to allow your customers limited control over their lanes as well.",
-  },
-  {
-    question: "How much does the Clutch Bowling system cost?",
-    answer:
-      "We currently offer a wide range of packages varying in ability and price, so to find the package best suited to your bowling center check out our pricing page.",
-  },
-];
+export default async function FAQsPage() {
+  const data = await client.fetch(`
+    *[_type == "faqs"]
+  `);
 
-export default function FAQsPage() {
+  const FAQsArray = data[0]?.frequentlyAskedQuestions;
+
   return (
     <main>
       <HeadingAndBreadcrumbs pageHeading="FAQs" />
       <section className="flex flex-col h-full w-full px-5 lg:px-10 pt-10 pb-20">
         <ul>
-          {FAQsArray.map((question, index) => (
+          {FAQsArray.map((item, index) => (
             <li key={index}>
-              <FAQCard faq={question} />
+              <FAQCard faq={item} />
             </li>
           ))}
         </ul>
