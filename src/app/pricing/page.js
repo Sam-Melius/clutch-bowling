@@ -1,5 +1,6 @@
 import HeroVideoAlt from "../components/HeroVideoAlt";
 import PricingCard from "../components/PricingCard";
+import TrianglesSection from "../components/TrianglesSection";
 
 export const metadata = {
   title: "Clutch Bowling | Pricing",
@@ -91,6 +92,12 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
+
+      <TrianglesSection
+        heading="Ready to talk shop?"
+        linkText="Get in touch"
+        isContact
+      />
     </main>
   );
 }

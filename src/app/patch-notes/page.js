@@ -1,7 +1,7 @@
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
-import GridlinesSection from "../components/GridlinesSection";
 import { client } from "../../../sanity/lib/client";
 import PatchNotesSection from "../components/PatchNotesSection";
+import TrianglesSection from "../components/TrianglesSection";
 
 export const metadata = {
   title: "Clutch Bowling | Patch Notes",
@@ -42,8 +42,7 @@ export default async function PatchNotesPage() {
 
       <PatchNotesSection patchNotesData={data} />
 
-      <GridlinesSection
-        variant="small"
+      <TrianglesSection
         heading="Have a request for our next update?"
         linkText="Get in touch"
         isContact

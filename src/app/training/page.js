@@ -1,4 +1,5 @@
 import HeroVideoAlt from "../components/HeroVideoAlt";
+import TrianglesSection from "../components/TrianglesSection";
 
 export const metadata = {
   title: "Clutch Bowling | Training",
@@ -41,6 +42,11 @@ export default function TrainingPage() {
         ultimately improving skills and boosting confidence."
         isContact
         linkText="Contact for info"
+      />
+      <TrianglesSection
+        heading="Have questions about our technology?"
+        linkText="View FAQs"
+        linkTo="/frequently-asked-questions"
       />
     </main>
   );

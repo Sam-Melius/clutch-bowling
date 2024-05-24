@@ -1,6 +1,6 @@
 import SmallHeadingAndText from "../components/SmallHeadingAndText";
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
-import GridlinesSection from "../components/GridlinesSection";
+import TrianglesSection from "../components/TrianglesSection";
 
 export const metadata = {
   title: "Clutch Bowling | Terms of Service",
@@ -96,9 +96,8 @@ export default async function TermsPage() {
           ))}
         </ul>
       </section>
-      <GridlinesSection
-        variant="small"
-        heading="For any questions about these Terms, please contact us!"
+      <TrianglesSection
+        heading="For any questions about these Terms, please contact us"
         linkText="Get in touch"
         isContact
       />

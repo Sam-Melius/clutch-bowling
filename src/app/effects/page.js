@@ -1,7 +1,7 @@
-import GridlinesSection from "../components/GridlinesSection";
 import { client } from "../../../sanity/lib/client";
 import HeroVideoAlt from "../components/HeroVideoAlt";
 import AllEffectsSection from "../components/AllEffectsSection";
+import TrianglesSection from "../components/TrianglesSection";
 
 export const metadata = {
   title: "Clutch Bowling | Effects",
@@ -67,8 +67,7 @@ export default async function EffectsPage() {
         linkText="See all effects"
       />
       <AllEffectsSection laneData={laneData} ballData={ballData} />
-      <GridlinesSection
-        variant="small"
+      <TrianglesSection
         heading="Have an idea for a new effect?"
         linkText="Get in touch"
         isContact

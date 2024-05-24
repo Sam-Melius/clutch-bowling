@@ -1,7 +1,7 @@
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
-import GridlinesSection from "../components/GridlinesSection";
 import FAQCard from "../components/FAQCard";
 import { client } from "../../../sanity/lib/client";
+import TrianglesSection from "../components/TrianglesSection";
 
 export const metadata = {
   title: "Clutch Bowling | FAQs",
@@ -51,8 +51,7 @@ export default async function FAQsPage() {
         </ul>
       </section>
 
-      <GridlinesSection
-        variant="small"
+      <TrianglesSection
         heading="Didn't answer your question?"
         linkText="Get in touch"
         isContact

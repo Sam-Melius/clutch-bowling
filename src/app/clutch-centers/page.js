@@ -1,6 +1,6 @@
 import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
-import GridlinesSection from "../components/GridlinesSection";
 import { client } from "../../../sanity/lib/client";
+import TrianglesSection from "../components/TrianglesSection";
 
 export const metadata = {
   title: "Clutch Bowling | Centers",
@@ -39,8 +39,7 @@ export default async function ClutchCentersPage() {
     <main>
       <HeadingAndBreadcrumbs pageHeading="Clutch Centers" />
 
-      {/* <GridlinesSection
-        variant="small"
+      {/* <TrianglesSection
         heading="Interested in becoming a Clutch Bowling Center?"
         linkText="Get in touch"
         isContact

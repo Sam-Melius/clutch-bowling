@@ -4,6 +4,7 @@ import GradientSection from "./components/GradientSection";
 import TrustedBySection from "./components/TrustedBySection";
 import GridlinesSection from "./components/GridlinesSection";
 import NeonLasers from "./components/NeonLasers";
+import TrianglesSection from "./components/TrianglesSection";
 
 export const metadata = {
   title: "Clutch Bowling",
@@ -36,15 +37,21 @@ export default function Home() {
   return (
     <main>
       <HeroVideo />
-      <GridlinesSection
+      {/* <GridlinesSection
         variant="large"
         id="mission"
         heading="We're on a mission to revolutionize the way you think about
       bowling."
         linkText="See how"
         linkTo="#key-features"
+      /> */}
+      <TrianglesSection
+        id="mission"
+        heading="We're on a mission to revolutionize the way you think about
+    bowling."
+        linkText="See how"
+        linkTo="#key-features"
       />
-      <NeonLasers />
       <KeyFeaturesSection />
       <TrustedBySection />
     </main>

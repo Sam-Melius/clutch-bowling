@@ -1,6 +1,7 @@
 import GridlinesSection from "../components/GridlinesSection";
 import AllFeaturesSection from "../components/AllFeaturesSection";
 import HeroVideoAlt from "../components/HeroVideoAlt";
+import TrianglesSection from "../components/TrianglesSection";
 
 export const metadata = {
   title: "Clutch Bowling | About",
@@ -44,8 +45,7 @@ export default function AboutPage() {
         linkText="See all features"
       />
       <AllFeaturesSection />
-      <GridlinesSection
-        variant="small"
+      <TrianglesSection
         heading="Have more questions?"
         linkText="View our FAQs"
         linkTo="/frequently-asked-questions"
