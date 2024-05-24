@@ -1,18 +1,16 @@
 import { bowlingCentersArray } from "./data/BowlingCenters";
 import BowlingCenterCard from "./BowlingCenterCard";
-import GradientSection from "./GradientSection";
 import LinkButton from "./Buttons/LinkButton";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function TrustedBySection() {
   return (
     <>
-      <GradientSection variant="light" size="small" />
       <section
         id="trusted-by"
-        className="h-fit grid gap-y-0 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 bg-clutchBlue-100 p-10"
+        className="h-fit grid gap-y-0 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 p-20 border-t border-b border-dashed border-[#4A4A4A]"
       >
-        <p className="col-span-full text-center text-xl text-black font-medium">
+        <p className="col-span-full text-center text-xl font-medium pb-5 lg:pb-0">
           Trusted By
         </p>
         {bowlingCentersArray.map((item, index) => (
@@ -33,12 +31,11 @@ export default function TrustedBySection() {
           <LinkButton
             linkText="View all"
             linkTo="/clutch-centers"
-            variant="black"
+            variant="secondary"
             icon={<FaArrowRight />}
           />
         </div>
       </section>
-      <GradientSection variant="light" size="small" isRotated />
     </>
   );
 }
