@@ -12,7 +12,7 @@ import { centersGeodataArray } from "./data/CentersGeodata";
 import { useState } from "react";
 
 export default function MapChart() {
-  const [openInfoWindowId, setOpenInfoWindowId] = useState(null);
+  // const [openInfoWindowId, setOpenInfoWindowId] = useState(null);
 
   const containerStyle = {
     width: "100%",
@@ -38,8 +38,8 @@ export default function MapChart() {
       >
         {centersGeodataArray && centersGeodataArray.length > 0 ? (
           centersGeodataArray.map((center, index) => {
-            const [markerRef, marker] = useAdvancedMarkerRef();
-            const isOpen = openInfoWindowId === index;
+            // const [markerRef, marker] = useAdvancedMarkerRef();
+            // const isOpen = openInfoWindowId === index;
 
             return (
               <AdvancedMarker
