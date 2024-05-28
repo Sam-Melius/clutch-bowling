@@ -36,7 +36,7 @@ export default function ClutchCentersPage() {
       <HeroVideoAlt
         videoUrl="/videos/clutch-bowling-demo.mp4"
         mainHeading="Trusted worldwide."
-        subheading="Bowling centers around the world rely on Clutch technology to provide top-tier experiences for their customers. We currently power XX locations in over XX countries."
+        subheading="Bowling centers around the world rely on Clutch technology to provide top-tier experiences for their customers. We currently power eight different locations across five countries."
         linkTo="#all-locations"
         linkText="See all locations"
       />

@@ -24,6 +24,19 @@ export default function MapChart() {
     lng: -38.523,
   };
 
+  const markers = centersGeodataArray.map((center, index) => {
+    const [markerRef, marker] = useAdvancedMarkerRef();
+    const isOpen = openInfoWindowId === index;
+
+    return {
+      markerRef,
+      marker,
+      isOpen,
+      center,
+      index,
+    };
+  });
+
   return (
     <APIProvider
       apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
@@ -36,46 +49,41 @@ export default function MapChart() {
         zoom={2}
         disableDefaultUI={false}
       >
-        {centersGeodataArray && centersGeodataArray.length > 0 ? (
-          centersGeodataArray.map((center, index) => {
-            const [markerRef, marker] = useAdvancedMarkerRef();
-            const isOpen = openInfoWindowId === index;
-
-            return (
-              <AdvancedMarker
-                ref={markerRef}
-                key={index}
-                position={center.location}
-                onClick={() => setOpenInfoWindowId(index)}
-              >
-                <Pin
-                  background={"#118ad7"}
-                  glyphColor={"#000"}
-                  borderColor={"#000"}
-                />
-                {isOpen && (
-                  <InfoWindow
-                    anchor={marker}
-                    onCloseClick={() => setOpenInfoWindowId(null)}
-                  >
-                    <div className="flex flex-col gap-1">
-                      <p className="text-xl font-medium text-primaryDark">
-                        {center.name}
-                      </p>
-                      <p className="text-gray-600">{center.locationName}</p>
-                      <a
-                        href={center.website}
-                        target="_blank"
-                        className="text-clutchBlue-900 font-medium"
-                      >
-                        Website
-                      </a>
-                    </div>
-                  </InfoWindow>
-                )}
-              </AdvancedMarker>
-            );
-          })
+        {markers && markers.length > 0 ? (
+          markers.map(({ markerRef, marker, isOpen, center, index }) => (
+            <AdvancedMarker
+              ref={markerRef}
+              key={index}
+              position={center.location}
+              onClick={() => setOpenInfoWindowId(index)}
+            >
+              <Pin
+                background={"#118ad7"}
+                glyphColor={"#000"}
+                borderColor={"#000"}
+              />
+              {isOpen && (
+                <InfoWindow
+                  anchor={marker}
+                  onCloseClick={() => setOpenInfoWindowId(null)}
+                >
+                  <div className="flex flex-col gap-1">
+                    <p className="text-xl font-medium text-primaryDark">
+                      {center.name}
+                    </p>
+                    <p className="text-gray-600">{center.locationName}</p>
+                    <a
+                      href={center.website}
+                      target="_blank"
+                      className="text-clutchBlue-900 font-medium"
+                    >
+                      Website
+                    </a>
+                  </div>
+                </InfoWindow>
+              )}
+            </AdvancedMarker>
+          ))
         ) : (
           <p>No data available</p>
         )}
