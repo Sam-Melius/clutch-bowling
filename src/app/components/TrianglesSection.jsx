@@ -15,19 +15,26 @@ export default function TrianglesSection({
       id={id}
       className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-20 bg-primaryDark border-b border-t border-dashed border-[#4A4A4A] px-5 md:px-20 pt-20 relative"
     >
-      <Image src={laneTriangles} className="flex opacity-50 rotate-180" />
+      <Image
+        src={laneTriangles}
+        className="flex opacity-50 rotate-180"
+        alt="Bowling lane triangles"
+      />
       <Image
         src={laneTriangles}
         className="hidden lg:flex opacity-50 rotate-180"
+        alt="Bowling lane triangles"
       />
 
       <Image
         src={laneTriangles}
         className="opacity-50 hidden xl:flex rotate-180"
+        alt="Bowling lane triangles"
       />
       <Image
         src={laneTriangles}
         className="opacity-50 hidden 2xl:flex rotate-180"
+        alt="Bowling lane triangles"
       />
 
       <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center">

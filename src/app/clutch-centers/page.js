@@ -1,6 +1,6 @@
-import HeadingAndBreadcrumbs from "../components/HeadingAndBreadcrumbs";
-import { client } from "../../../sanity/lib/client";
 import TrianglesSection from "../components/TrianglesSection";
+import HeroVideoAlt from "../components/HeroVideoAlt";
+import MapChart from "../components/MapChart";
 
 export const metadata = {
   title: "Clutch Bowling | Centers",
@@ -30,20 +30,33 @@ export const metadata = {
   ],
 };
 
-export default async function ClutchCentersPage() {
-  // const data = await client.fetch(`
-  //   *[_type == "centers"]
-  // `);
-
+export default function ClutchCentersPage() {
   return (
     <main>
-      <HeadingAndBreadcrumbs pageHeading="Clutch Centers" />
+      <HeroVideoAlt
+        videoUrl="/videos/clutch-bowling-demo.mp4"
+        mainHeading="Trusted worldwide."
+        subheading="Bowling centers around the world rely on Clutch technology to provide top-tier experiences for their customers. We currently power XX locations in over XX countries."
+        linkTo="#all-locations"
+        linkText="See all locations"
+      />
 
-      {/* <TrianglesSection
+      <section id="all-locations" className="px-5 lg:p-10 py-20 lg:my-10">
+        <div className="flex flex-col gap-10 lg:gap-20">
+          <h3 className="col-span-full text-4xl md:text-5xl text-center">
+            All Locations
+          </h3>
+          <div className="flex mx-auto w-full xl:max-w-screen-lg">
+            <MapChart />
+          </div>
+        </div>
+      </section>
+
+      <TrianglesSection
         heading="Interested in becoming a Clutch Bowling Center?"
         linkText="Get in touch"
         isContact
-      /> */}
+      />
     </main>
   );
 }
