@@ -1,6 +1,8 @@
 import TrianglesSection from "../components/TrianglesSection";
 import HeroVideoAlt from "../components/HeroVideoAlt";
 import MapChart from "../components/MapChart";
+import { client } from "../../../sanity/lib/client";
+import BowlingCenterCard from "../components/BowlingCenterCard";
 
 export const metadata = {
   title: "Clutch Bowling | Centers",
@@ -30,7 +32,22 @@ export const metadata = {
   ],
 };
 
-export default function ClutchCentersPage() {
+export default async function ClutchCentersPage() {
+  const centerData = await client.fetch(`
+    *[_type == "centers"]{
+      name, 
+      "location": locationName,
+      coordinates,
+      url,
+      "imageUrl": logo.asset->url,
+      "height": logo.asset->metadata.dimensions.height,
+      "width": logo.asset->metadata.dimensions.width,
+      "blurDataURL": logo.asset->metadata.lqip,
+      "facebook": facebookUrl,
+      "instagram": instagramUrl,
+    }
+  `);
+
   return (
     <main>
       <HeroVideoAlt
@@ -46,8 +63,15 @@ export default function ClutchCentersPage() {
           <h3 className="col-span-full text-4xl md:text-5xl text-center">
             All Locations
           </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-10">
+            {centerData.map((center, index) => (
+              <div key={index}>
+                <BowlingCenterCard center={center} />
+              </div>
+            ))}
+          </div>
           <div className="flex mx-auto w-full xl:max-w-screen-lg">
-            <MapChart />
+            <MapChart bowlingCenterData={centerData} />
           </div>
         </div>
       </section>

@@ -4,16 +4,10 @@ import {
   APIProvider,
   Map,
   AdvancedMarker,
-  InfoWindow,
-  useAdvancedMarkerRef,
   Pin,
 } from "@vis.gl/react-google-maps";
-import { centersGeodataArray } from "./data/CentersGeodata";
-import { useState } from "react";
 
-export default function MapChart() {
-  // const [openInfoWindowId, setOpenInfoWindowId] = useState(null);
-
+export default function MapChart({ bowlingCenterData }) {
   const containerStyle = {
     width: "100%",
     height: "80svh",
@@ -36,43 +30,15 @@ export default function MapChart() {
         zoom={2}
         disableDefaultUI={true}
       >
-        {centersGeodataArray && centersGeodataArray.length > 0 ? (
-          centersGeodataArray.map((center, index) => {
-            // const [markerRef, marker] = useAdvancedMarkerRef();
-            // const isOpen = openInfoWindowId === index;
-
+        {bowlingCenterData && bowlingCenterData.length > 0 ? (
+          bowlingCenterData.map((center, index) => {
             return (
-              <AdvancedMarker
-                // ref={markerRef}
-                key={index}
-                position={center.location}
-                // onClick={() => setOpenInfoWindowId(index)}
-              >
+              <AdvancedMarker key={index} position={center.coordinates}>
                 <Pin
                   background={"#118ad7"}
                   glyphColor={"#000"}
                   borderColor={"#000"}
                 />
-                {/* {isOpen && (
-                  <InfoWindow
-                    anchor={marker}
-                    onCloseClick={() => setOpenInfoWindowId(null)}
-                  >
-                    <div className="flex flex-col gap-1">
-                      <p className="text-xl font-medium text-primaryDark">
-                        {center.name}
-                      </p>
-                      <p className="text-gray-500">{center.locationName}</p>
-                      <a
-                        href={center.website}
-                        target="_blank"
-                        className="text-clutchBlue-900 font-medium"
-                      >
-                        Website
-                      </a>
-                    </div>
-                  </InfoWindow>
-                )} */}
               </AdvancedMarker>
             );
           })

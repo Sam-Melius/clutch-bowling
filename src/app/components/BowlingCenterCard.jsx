@@ -1,13 +1,71 @@
 import Image from "next/image";
+import { FaInstagram } from "react-icons/fa";
+import { AiFillFacebook } from "react-icons/ai";
+import { FiExternalLink } from "react-icons/fi";
 
-export default function BowlingCenterCard({ name, logo, url }) {
+export default function BowlingCenterCard({ center }) {
   return (
-    <a href={url} target="_blank">
-      <Image
-        src={logo}
-        alt={name}
-        className="object-fit h-auto w-auto p-5 lg:p-10"
-      />
-    </a>
+    <div className="flex flex-col lg:flex-row items-start justify-start gap-5 border border-gray-600 hover:border-gray-200 hover:bg-gray-500/20 transition-all duration-500 rounded-lg p-5 bg-transparent custom-backdrop-blur-lg w-full h-full">
+      <div className="w-full lg:w-3/5 flex flex-col gap-2">
+        <div className=" border-gray-500 py-2 flex flex-col gap-1">
+          <p className="text-gray-500 uppercase text-xs">Name</p>
+          <p className="text-clutchBlue-300 text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium">
+            {center.name}
+          </p>
+        </div>
+        <div className=" border-gray-500 py-2 flex flex-col gap-1">
+          <p className="text-gray-500 uppercase text-xs">Location</p>
+          <p className="text-white text-lg">{center.location}</p>
+        </div>
+        <div className=" border-gray-500 pt-2 pb-4 grid grid-cols-3 gap-5 w-full">
+          <div className="flex flex-col gap-2">
+            <p className="text-gray-500 uppercase text-xs">Website</p>
+            <a
+              href={center.url}
+              target="_blank"
+              className="text-white hover:text-clutchBlue-300 text-2xl"
+            >
+              <FiExternalLink />
+            </a>
+          </div>
+          {center.facebook && (
+            <div className="flex flex-col gap-2">
+              <p className="text-gray-500 uppercase text-xs">Facebook</p>
+              <a
+                href={center.facebook}
+                target="_blank"
+                className="text-white hover:text-clutchBlue-300 text-2xl"
+              >
+                <AiFillFacebook />
+              </a>
+            </div>
+          )}
+          {center.instagram && (
+            <div className="flex flex-col gap-2">
+              <p className="text-gray-500 uppercase text-xs">Instagram</p>
+              <a
+                href={center.instagram}
+                target="_blank"
+                className="text-white hover:text-clutchBlue-300 text-2xl"
+              >
+                <FaInstagram />
+              </a>
+            </div>
+          )}
+        </div>
+      </div>
+      <div className="w-full lg:w-2/5 flex flex-col gap-2 justify-between">
+        <p className="text-gray-500 uppercase text-xs">Logo</p>
+        <Image
+          src={center.imageUrl}
+          alt={center.name}
+          className="object-fit h-auto w-auto"
+          height={center.height}
+          width={center.width}
+          placeholder="blur"
+          blurDataURL={center.blurDataURL}
+        />
+      </div>
+    </div>
   );
 }
