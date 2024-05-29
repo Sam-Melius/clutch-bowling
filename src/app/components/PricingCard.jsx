@@ -22,7 +22,7 @@ export default function PricingCard({ pricingData }) {
         </div>
 
         <div className="border-b border-gray-600 pb-3">
-          <ul className="ml-8 flex flex-col gap-2">
+          <ul className="ml-2 flex flex-col gap-2">
             {pricingData.bulletPoints.map((item, index) => (
               <li key={index} className="flex flex-row gap-2 items-start">
                 <FaBowlingBall className="min-h-5 max-h-5 min-w-5 max-w-5 p-1 mt-0.5" />
