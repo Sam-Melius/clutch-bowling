@@ -1,3 +1,4 @@
+import { client } from "../../../sanity/lib/client";
 import HeroVideoAlt from "../components/HeroVideoAlt";
 import PricingCard from "../components/PricingCard";
 import TrianglesSection from "../components/TrianglesSection";
@@ -30,46 +31,24 @@ export const metadata = {
   ],
 };
 
-const standardData = {
-  title: "Standard",
-  startingPrice: 4495,
-  includes: [
-    "36 Month Commitment",
-    "$100 Per Lane Per Month (6 lane minimum)",
-    "Unlimited hardware warranty",
-    "Unlimited software updates",
-    "Bulb replacement",
-    "Customer-controlled mobile app",
-    "Net revenue tracking abilities",
-    "Ability to upload photos/logos to lane (parties, special occasions, etc)",
-    "50+ ball and lane effects",
-    "5+ interactive games",
-    "10 gutter cap effects",
-    "New monthly content",
-    "Specto software",
-  ],
-};
+export default async function PricingPage() {
+  const data = await client.fetch(`
+  {
+    "standardTier": *[_type == "pricing" && tier == "Standard"]{
+      tier,
+      startingPrice,
+      bulletPoints
+    },
+    "premiumTier": *[_type == "pricing" && tier == "Premium"]{
+      tier,
+      startingPrice,
+      bulletPoints
+    }
+  }`);
 
-const premiumData = {
-  title: "Premium",
-  startingPrice: 9000,
-  includes: [
-    "Unlimited hours of use",
-    "Unlimited hardware warranty (first 3 years)",
-    "Unlimited software updates",
-    "Bulb replacement (2 per pair per year for  first 3 years)",
-    "Customer-controlled mobile app",
-    "Net revenue tracking abilities",
-    "Ability to upload photos/logos to lane (parties, special occasions, etc)",
-    "50+ ball and lane effects",
-    "5+ interactive games",
-    "10 gutter cap effects",
-    "New monthly content",
-    "Specto software",
-  ],
-};
+  const standardTier = data?.standardTier[0];
+  const premiumTier = data?.premiumTier[0];
 
-export default function PricingPage() {
   return (
     <main>
       <HeroVideoAlt
@@ -87,8 +66,8 @@ export default function PricingPage() {
           </h3>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
-            <PricingCard pricingData={standardData} />
-            <PricingCard pricingData={premiumData} />
+            <PricingCard pricingData={standardTier} />
+            <PricingCard pricingData={premiumTier} />
           </div>
         </div>
       </section>
