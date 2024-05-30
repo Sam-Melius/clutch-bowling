@@ -6,18 +6,18 @@ import { FiExternalLink } from "react-icons/fi";
 export default function BowlingCenterCard({ center }) {
   return (
     <div className="flex flex-col lg:flex-row items-start justify-start gap-5 border border-gray-600 hover:border-gray-200 hover:bg-gray-500/20 transition-all duration-500 rounded-lg p-5 bg-transparent custom-backdrop-blur-lg w-full h-full">
-      <div className="w-full lg:w-3/5 flex flex-col gap-2">
-        <div className=" border-gray-500 py-2 flex flex-col gap-1">
+      <div className="w-full lg:w-3/5 flex flex-col gap-5">
+        <div className=" border-gray-500 flex flex-col gap-1">
           <p className="text-gray-500 uppercase text-xs">Name</p>
           <p className="text-clutchBlue-300 text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium">
             {center.name}
           </p>
         </div>
-        <div className=" border-gray-500 py-2 flex flex-col gap-1">
+        <div className=" border-gray-500 marker:flex flex-col gap-1">
           <p className="text-gray-500 uppercase text-xs">Location</p>
           <p className="text-white text-lg">{center.location}</p>
         </div>
-        <div className=" border-gray-500 pt-2 pb-4 grid grid-cols-3 gap-5 w-full">
+        <div className=" border-gray-500 grid grid-cols-3 gap-5 w-full">
           <div className="flex flex-col gap-2">
             <p className="text-gray-500 uppercase text-xs">Website</p>
             <a
