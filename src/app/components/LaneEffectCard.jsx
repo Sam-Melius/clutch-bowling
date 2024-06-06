@@ -16,12 +16,12 @@ export default function LaneEffectCard({ effectData }) {
       data-aos-duration="700"
       data-aos-once="true"
     >
-      <button
+      {/* <button
         className="absolute top-0 right-0 text-2xl z-10 bg-clutchBlue-800 hover:bg-clutchBlue-600 hover:cursor-pointer rounded-tr-md rounded-bl-md p-1 h-8 w-8"
         onClick={() => setShowModal(true)}
       >
         <FaEye />
-      </button>
+      </button> */}
 
       <Image
         src={effectData.imageUrl}
@@ -37,7 +37,7 @@ export default function LaneEffectCard({ effectData }) {
         {effectData.name}
       </figcaption>
 
-      {showModal && (
+      {/* {showModal && (
         <div className="fixed inset-0 z-50">
           <div className="rounded-lg relative">
             <button
@@ -53,7 +53,7 @@ export default function LaneEffectCard({ effectData }) {
             />
           </div>
         </div>
-      )}
+      )} */}
     </figure>
   );
 }

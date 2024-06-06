@@ -1,4 +1,3 @@
-import GridlinesSection from "../components/GridlinesSection";
 import AllFeaturesSection from "../components/AllFeaturesSection";
 import HeroVideoAlt from "../components/HeroVideoAlt";
 import TrianglesSection from "../components/TrianglesSection";

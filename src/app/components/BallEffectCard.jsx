@@ -6,8 +6,8 @@ export default function BallEffectCard({ effectData }) {
       src={effectData.imageUrl}
       alt={effectData.name}
       className="h-auto w-full object-cover rounded-lg"
-      placeholder="blur"
-      blurDataURL={effectData.blurDataUrl}
+      // placeholder="blur"
+      // blurDataURL={effectData.blurDataUrl}
       height={effectData.height}
       width={effectData.width}
       data-aos="fade-up"
