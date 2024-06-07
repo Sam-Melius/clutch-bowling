@@ -19,7 +19,7 @@ export default async function TrustedBySection() {
   return (
     <section
       id="trusted-by"
-      className="h-fit grid gap-y-0 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 p-20 border-t border-b border-dashed border-[#4A4A4A]"
+      className="h-fit grid gap-y-0 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 py-20 px-5 lg:p-20 border-t border-b border-dashed border-[#4A4A4A]"
     >
       <p className="col-span-full text-center text-xl font-medium pb-5 lg:pb-0">
         Trusted By
@@ -34,7 +34,7 @@ export default async function TrustedBySection() {
           <TrustedByImage center={center} />
         </figure>
       ))}
-      <div className="col-span-full mx-auto justify-center items-center">
+      <div className="col-span-full mx-auto justify-center items-center pt-5 lg:pt-0">
         <LinkButton
           linkText="View all"
           linkTo="/clutch-centers"
