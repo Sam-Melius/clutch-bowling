@@ -13,19 +13,19 @@ export default function CentersView({ centerData }) {
       <div className="flex flex-row gap-5 justify-center my-5 text-lg">
         <button
           onClick={() => setViewMode("grid")}
-          className={`px-2 py-1 ${viewMode === "grid" ? "border border-dashed text-clutchBlue-300 border-clutchBlue-300" : "border-transparent"}`}
+          className={`px-2 py-1 ${viewMode === "grid" ? "border border-dashed text-clutchBlue-300 border-clutchBlue-300" : "border-transparent border"}`}
         >
           Grid View
         </button>
         <button
           onClick={() => setViewMode("list")}
-          className={`px-2 py-1 ${viewMode === "list" ? "border border-dashed text-clutchBlue-300 border-clutchBlue-300" : "border-transparent"}`}
+          className={`px-2 py-1 ${viewMode === "list" ? "border border-dashed text-clutchBlue-300 border-clutchBlue-300" : "border-transparent border"}`}
         >
           List View
         </button>
         <button
           onClick={() => setViewMode("map")}
-          className={`px-2 py-1 ${viewMode === "map" ? "border border-dashed text-clutchBlue-300 border-clutchBlue-300" : "border-transparent"}`}
+          className={`px-2 py-1 ${viewMode === "map" ? "border border-dashed text-clutchBlue-300 border-clutchBlue-300" : "border-transparent border"}`}
         >
           Map View
         </button>

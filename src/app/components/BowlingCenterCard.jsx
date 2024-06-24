@@ -85,7 +85,7 @@ export default function BowlingCenterCard({ center, viewMode }) {
           <p className="text-white text-lg">{center.location}</p>
         </div>
 
-        <div className="col-span-full md:col-span-3 md:col-start-4 lg:col-span-3 flex flex-row justify-between md:justify-normal gap-5">
+        <div className="col-span-full md:col-span-3 md:col-start-4 lg:col-span-3 flex flex-row justify-between gap-5">
           <div className="flex flex-col gap-2">
             <p className="text-gray-500 uppercase text-xs">Website</p>
             <a
