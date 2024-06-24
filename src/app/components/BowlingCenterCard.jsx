@@ -7,12 +7,12 @@ export default function BowlingCenterCard({ center, viewMode }) {
   if (viewMode === "grid") {
     return (
       <div
-        className={`flex flex-col lg:flex-row items-start justify-start gap-5 border border-gray-600 hover:border-gray-200 hover:bg-gray-500/20 transition-all duration-500 rounded-lg p-5 bg-transparent custom-backdrop-blur-lg w-full h-full"} `}
+        className={`flex flex-col lg:flex-row items-start justify-start gap-5 border border-gray-600 hover:border-gray-200 hover:bg-gray-500/20 transition-all duration-500 rounded-lg p-5 bg-transparent custom-backdrop-blur-lg w-full h-full"}`}
       >
         <div className="w-full lg:w-3/5 flex flex-col gap-5">
           <div className=" border-gray-500 flex flex-col gap-1">
             <p className="text-gray-500 uppercase text-xs">Name</p>
-            <p className="text-clutchBlue-300 text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium">
+            <p className="text-clutchBlue-300 text-3xl lg:text-2xl xl:text-2xl 2xl:text-3xl font-medium">
               {center.name}
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function BowlingCenterCard({ center, viewMode }) {
   } else if (viewMode === "list") {
     return (
       <div className="grid grid-cols-6 lg:grid-cols-12 gap-5 border-b border-gray-600 p-5">
-        <div className="col-span-full md:col-span-3 lg:col-span-5 xl:cols flex flex-col gap-1">
+        <div className="col-span-full md:col-span-3 lg:col-span-5 flex flex-col gap-1">
           <p className="text-gray-500 uppercase text-xs">Name</p>
           <p className="text-clutchBlue-300 text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium">
             {center.name}
@@ -85,7 +85,7 @@ export default function BowlingCenterCard({ center, viewMode }) {
           <p className="text-white text-lg">{center.location}</p>
         </div>
 
-        <div className="col-span-full md:col-span-3 md:col-start-4 lg:col-span-2 flex flex-row justify-between md:justify-normal gap-5">
+        <div className="col-span-full md:col-span-3 md:col-start-4 lg:col-span-3 flex flex-row justify-between md:justify-normal gap-5">
           <div className="flex flex-col gap-2">
             <p className="text-gray-500 uppercase text-xs">Website</p>
             <a
