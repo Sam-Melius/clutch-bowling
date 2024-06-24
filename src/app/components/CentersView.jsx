@@ -33,7 +33,7 @@ export default function CentersView({ centerData }) {
 
       {/* Conditionally render the grid, list, or map view */}
       {viewMode === "map" ? (
-        <div className="flex justify-center w-full xl:max-w-screen-md mx-auto">
+        <div className="flex justify-center w-full 2xl:max-w-screen-xl mx-auto">
           <MapChart bowlingCenterData={centerData} />
         </div>
       ) : (
