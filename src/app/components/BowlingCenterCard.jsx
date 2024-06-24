@@ -62,7 +62,6 @@ export default function BowlingCenterCard({ center }) {
           className="object-fit h-auto w-auto"
           height={center.height}
           width={center.width}
-          placeholder="blur"
           blurDataURL={center.blurDataURL}
         />
       </div>
