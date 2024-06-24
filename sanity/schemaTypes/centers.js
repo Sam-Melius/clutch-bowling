@@ -1,5 +1,3 @@
-// schemas/bowlingCenter.js
-
 export default {
   name: "centers",
   title: "Centers",
@@ -68,4 +66,7 @@ export default {
       type: "url",
     },
   ],
+  initialValue: {
+    includeInTrustedBySection: false,
+  },
 };
