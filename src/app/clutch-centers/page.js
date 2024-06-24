@@ -45,7 +45,7 @@ export default async function ClutchCentersPage() {
       "blurDataURL": logo.asset->metadata.lqip,
       "facebook": facebookUrl,
       "instagram": instagramUrl,
-    }
+    } | order(name asc)
   `);
 
   return (
