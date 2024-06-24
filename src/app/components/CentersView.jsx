@@ -9,7 +9,6 @@ export default function CentersView({ centerData }) {
 
   return (
     <div>
-      {/* Toggle buttons for view mode */}
       <div className="flex flex-row gap-5 justify-center my-5 text-lg">
         <button
           onClick={() => setViewMode("grid")}
@@ -31,9 +30,8 @@ export default function CentersView({ centerData }) {
         </button>
       </div>
 
-      {/* Conditionally render the grid, list, or map view */}
       {viewMode === "map" ? (
-        <div className="flex justify-center w-full 2xl:max-w-screen-xl mx-auto">
+        <div className="flex justify-center w-full">
           <MapChart bowlingCenterData={centerData} />
         </div>
       ) : (
