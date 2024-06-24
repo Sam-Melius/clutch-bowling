@@ -1,8 +1,9 @@
+import React from "react";
 import TrianglesSection from "../components/TrianglesSection";
 import HeroVideoAlt from "../components/HeroVideoAlt";
 import MapChart from "../components/MapChart";
 import { client } from "../../../sanity/lib/client";
-import BowlingCenterCard from "../components/BowlingCenterCard";
+import CentersView from "../components/CentersView";
 
 export const metadata = {
   title: "Clutch Bowling | Centers",
@@ -58,21 +59,12 @@ export default async function ClutchCentersPage() {
         linkText="See all locations"
       />
 
-      <section id="all-locations" className="px-5 lg:p-10 lg:my-10">
-        <div className="flex flex-col gap-10 lg:gap-20">
+      <section id="all-locations" className="px-5 lg:p-10 my-10">
+        <div className="flex flex-col">
           <h3 className="col-span-full text-4xl md:text-5xl text-center">
             All Locations
           </h3>
-          <div className="flex mx-auto w-full xl:max-w-screen-lg">
-            <MapChart bowlingCenterData={centerData} />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-10">
-            {centerData.map((center, index) => (
-              <div key={index}>
-                <BowlingCenterCard center={center} />
-              </div>
-            ))}
-          </div>
+          <CentersView centerData={centerData} />
         </div>
       </section>
 

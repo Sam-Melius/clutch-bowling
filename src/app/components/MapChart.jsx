@@ -10,7 +10,7 @@ import {
 export default function MapChart({ bowlingCenterData }) {
   const containerStyle = {
     width: "100%",
-    height: "80svh",
+    height: "60svh",
   };
 
   const center = {
