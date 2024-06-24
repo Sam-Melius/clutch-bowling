@@ -59,7 +59,10 @@ export default async function ClutchCentersPage() {
         linkText="See all locations"
       />
 
-      <section id="all-locations" className="px-5 lg:p-10 my-10">
+      <section
+        id="all-locations"
+        className="px-5 lg:p-10 my-10 2xl:max-w-screen-2xl mx-auto"
+      >
         <div className="flex flex-col gap-5">
           <h3 className="col-span-full text-4xl md:text-5xl text-center">
             All Locations

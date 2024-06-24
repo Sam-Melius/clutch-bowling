@@ -19,7 +19,7 @@ export default function CentersView({ centerData }) {
         </button>
         <button
           onClick={() => setViewMode("list")}
-          className={`px-2 py-1 ${viewMode === "list" ? "border border-dashed text-clutchBlue-300 border-clutchBlue-300" : "border-transparent border"}`}
+          className={`hidden md:flex px-2 py-1 ${viewMode === "list" ? "border border-dashed text-clutchBlue-300 border-clutchBlue-300" : "border-transparent border"}`}
         >
           List View
         </button>
