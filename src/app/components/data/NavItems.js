@@ -19,10 +19,6 @@ export const navLinksArray = [
     text: "FAQs",
     linkTo: "/frequently-asked-questions",
   },
-  {
-    text: "Patch Notes",
-    linkTo: "/patch-notes",
-  },
 ];
 
 export const footerNavLinks = [
