@@ -10,6 +10,7 @@ export default function HeroVideoAlt({
   linkTo,
   linkText,
   isContact,
+  isPreInstallForm,
 }) {
   return (
     <section className="flex h-svh w-full relative">
@@ -46,6 +47,7 @@ export default function HeroVideoAlt({
               linkTo={linkTo}
               icon={<FaArrowRight />}
               isContact={isContact}
+              isPreInstallForm={isPreInstallForm}
             />
           </div>
         </div>

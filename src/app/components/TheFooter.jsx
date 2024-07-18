@@ -2,7 +2,6 @@ import Link from "next/link";
 import { footerNavLinks } from "./data/NavItems";
 import SocialIcon from "./Socials/SocialIcon";
 import { socialsArray } from "./data/Socials";
-import ContactButton from "./ContactButton";
 
 export default function TheFooter() {
   return (
@@ -20,9 +19,7 @@ export default function TheFooter() {
             {item.text}
           </Link>
         ))}
-        <p className="col-span-1 w-fit font-medium hover-underline">
-          <ContactButton buttonText="Contact Us" />
-        </p>
+
         <div className="flex flex-col gap-2">
           <p className="font-medium">Follow Us</p>
           <ul className="flex flex-row gap-4 text-xl">
