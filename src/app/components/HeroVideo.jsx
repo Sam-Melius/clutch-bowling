@@ -19,12 +19,7 @@ export default function HeroVideo() {
       <div className="absolute -z-30 w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center bg-primaryDark"></div>
 
       <div className="absolute w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-content-end px-5 pb-5">
-        <div
-          className="flex flex-col gap-4 md:gap-6 lg:gap-2 xl:gap-4 col-span-full"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          data-aos-once="true"
-        >
+        <div className="flex flex-col gap-4 md:gap-6 lg:gap-2 xl:gap-4 col-span-full animate__animated animate__fadeIn animate__slow">
           <h1 className="text-5xl md:text-8xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-medium text-stroke">
             The ultimate interactive
             <br />
