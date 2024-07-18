@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { navLinksArray } from "./data/NavItems";
-import ContactButton from "./ContactButton";
 import NeonLasers from "./NeonLasers";
 
 export default function Menu() {
@@ -52,9 +51,6 @@ export default function Menu() {
                 {item.text}
               </Link>
             ))}
-            <p className="text-5xl md:text-7xl xl:text-7xl 2xl:text-8xl hover:text-clutchBlue-700 transition duration-300">
-              <ContactButton buttonText="Contact Us" />
-            </p>
           </div>
         </div>
       )}
