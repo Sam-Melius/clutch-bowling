@@ -35,7 +35,7 @@ export default async function ContactPage() {
       <HeroVideoAlt
         videoUrl="/videos/clutch-lane-effects.mp4"
         mainHeading="Get in touch."
-        subheading="For general inquiries, please checkout our FAQ page. If you still have questions please fill out the form below."
+        subheading="For general inquiries, please check out our FAQ page. If you still have questions please fill out the form below."
         linkText="Start now"
         isPreInstallForm={false}
         isContact={true}

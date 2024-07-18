@@ -35,7 +35,7 @@ export default async function InstallationFormPage() {
       <HeroVideoAlt
         videoUrl="/videos/clutch-lane-effects.mp4"
         mainHeading="Pre-install form"
-        subheading="In order to get Clutch Bowling up and running at your center, lease fill out the form linked below."
+        subheading="In order to get Clutch Bowling up and running at your center, please fill out the form linked below."
         linkText="Start now"
         isPreInstallForm={true}
         isContact={false}
