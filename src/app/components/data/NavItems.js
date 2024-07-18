@@ -19,6 +19,10 @@ export const navLinksArray = [
     text: "FAQs",
     linkTo: "/frequently-asked-questions",
   },
+  {
+    text: "Contact Us",
+    linkTo: "/contact",
+  },
 ];
 
 export const footerNavLinks = [
@@ -53,5 +57,9 @@ export const footerNavLinks = [
   {
     text: "Installation Form",
     linkTo: "/installation-form",
+  },
+  {
+    text: "Contact Us",
+    linkTo: "/contact",
   },
 ];
