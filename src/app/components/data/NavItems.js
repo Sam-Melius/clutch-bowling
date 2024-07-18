@@ -23,10 +23,6 @@ export const navLinksArray = [
 
 export const footerNavLinks = [
   {
-    text: "Home",
-    linkTo: "/",
-  },
-  {
     text: "About",
     linkTo: "/about",
   },
@@ -53,5 +49,9 @@ export const footerNavLinks = [
   {
     text: "Clutch Centers",
     linkTo: "/clutch-centers",
+  },
+  {
+    text: "Installation Form",
+    linkTo: "/installation-form",
   },
 ];
