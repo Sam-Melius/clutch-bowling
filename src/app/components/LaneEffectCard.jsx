@@ -32,7 +32,7 @@ export default function LaneEffectCard({ effectData }) {
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
-      <div className="w-full h-[200px] h-[300px]"> {/* Adjust height here to match effectData */}
+      <div className="w-full h-[200px] md:h-[300px]"> {/* Adjust height here to match effectData */}
         {isVideoPlaying ? (
           <video
             id="effectsVideo"
