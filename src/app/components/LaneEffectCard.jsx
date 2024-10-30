@@ -42,7 +42,6 @@ export default function LaneEffectCard({ effectData }) {
             muted
             onEnded={() => setIsVideoPlaying(false)} // Set video to revert to image after ending
             className="w-full h-full object-cover rounded-lg cursor-pointer"
-            
           />
         ) : (
           <Image
