@@ -73,6 +73,22 @@ main {
   backdrop-filter: blur(64px);
 }
 
+.circle-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-content {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
 @keyframes glow {
   0%,
   100% {

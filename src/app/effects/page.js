@@ -37,6 +37,7 @@ export default async function EffectsPage() {
     "laneEffects": *[_type == "laneEffects"] | order(name asc) {
       name,
       'imageUrl': image.asset->url,
+      'video': video.asset->url,
       'height': image.asset->metadata.dimensions.height,
       'width': image.asset->metadata.dimensions.width,
       'blurDataUrl': image.asset->metadata.lqip,
@@ -44,6 +45,7 @@ export default async function EffectsPage() {
     "ballEffects": *[_type == "ballEffects"] | order(name asc) {
       name,
       'imageUrl': image.asset->url,
+      'video': video.asset->url,
       'height': image.asset->metadata.dimensions.height,
       'width': image.asset->metadata.dimensions.width,
       'blurDataUrl': image.asset->metadata.lqip,
