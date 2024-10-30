@@ -15,5 +15,14 @@ export default {
       type: "image",
       validation: (rule) => rule.required(),
     },
+    {
+      name: "video",
+      title: "Video",
+      type: "file", // Change "video" to "file" or "url"
+      validation: (rule) => rule.required(),
+      options: {
+        accept: "video/*" // Optional: restricts to video file types
+      },
+    },
   ],
 };
