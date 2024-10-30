@@ -25,7 +25,7 @@ export default function BallEffectCard({ effectData }) {
 
   return (
     <figure
-      className="flex flex-col gap-2 relative transition ease-in-out delay-150 duration-300 pb-10 h-[250px]"
+      className="flex flex-col gap-2 relative transition ease-in-out delay-150 duration-300 pb-10 h-[200] md:h-[250px]"
       data-aos="fade-up"
       data-aos-duration="700"
       data-aos-once="true"
