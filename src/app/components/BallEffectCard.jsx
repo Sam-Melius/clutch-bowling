@@ -48,7 +48,7 @@ export default function BallEffectCard({ effectData }) {
         <Image
           src={effectData.imageUrl}
           alt={effectData.name}
-          className="h-auto hover:ring-4 ring-cyan-300 ring-offset-2 w-full object-cover rounded-full cursor-pointer"
+          className="h-auto hover:ring-4 ring-secondaryBlue ring-offset-2 w-full object-cover rounded-full cursor-pointer"
           placeholder="blur"
           blurDataURL={effectData.blurDataUrl}
           height={effectData.height}
