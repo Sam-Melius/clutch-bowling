@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { navLinksArray } from "./data/NavItems";
 import NeonLasers from "./NeonLasers";
+import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function Menu() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -21,13 +23,14 @@ export default function Menu() {
   };
 
   return (
-    <nav className="fixed top-5 right-5">
-      <div className={isMenuOpen ? "hidden" : "flex flex-row"}>
+    
+    <nav className=" ">
+      <div className={isMenuOpen ? "hidden" : "lg:hidden flex flex-row"}>
         <button
           onClick={toggleMenu}
           className="underline underline-offset-4 hover-underline"
         >
-          Menu
+          <AiOutlineMenu className="text-white h-8 w-8 hover:text-secondaryBlue"/>
         </button>
       </div>
 
@@ -39,14 +42,14 @@ export default function Menu() {
               onClick={toggleMenu}
               className="z-[9991] underline underline-offset-4 hover-underline"
             >
-              Close
+              <AiOutlineClose className="h-8 w-10 text-white hover:text-secondaryBlue" />
             </button>
             {navLinksArray.map((item, index) => (
               <Link
                 key={index}
                 href={item.linkTo}
                 onClick={toggleMenu}
-                className="text-5xl md:text-7xl xl:text-7xl 2xl:text-8xl hover:text-clutchBlue-700 transition duration-300"
+                className="text-5xl md:text-7xl xl:text-7xl 2xl:text-8xl hover:text-secondaryBlue transition duration-300"
               >
                 {item.text}
               </Link>

@@ -4,7 +4,7 @@
 
 @layer components {
   .hover-underline {
-    @apply hover:underline underline-offset-4 hover:text-clutchBlue-500 transition-all duration-300;
+    @apply hover:underline underline-offset-4 hover:text-secondaryBlue transition-all duration-300;
   }
 }
 
@@ -21,6 +21,8 @@
   --clutchBlue-700: #43a2e4;
   --clutchBlue-800: #2a96e0;
   --clutchBlue-900: #118ad7;
+  --primaryBlue: rgb(15 23 42);
+  --secondaryBlue: rgb(56 189 248)
 }
 
 body {
