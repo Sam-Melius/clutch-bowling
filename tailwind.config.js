@@ -21,6 +21,8 @@ module.exports = {
           900: "var(--clutchBlue-900)",
         },
         primaryDark: "#181818",
+        primaryBlue: "var(--primaryBlue)",
+        secondaryBlue: "var(--secondaryBlue)"
       },
     },
   },

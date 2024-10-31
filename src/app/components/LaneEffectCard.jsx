@@ -47,7 +47,7 @@ export default function LaneEffectCard({ effectData }) {
           <Image
             src={effectData.imageUrl}
             alt={effectData.name}
-            className="w-full h-full object-cover rounded-lg cursor-pointer"
+            className="w-full h-full object-cover rounded-lg cursor-pointer hover:ring-4 ring-cyan-300 ring-offset-2"
             placeholder="blur"
             blurDataURL={effectData.blurDataUrl}
             height={effectData.height}
