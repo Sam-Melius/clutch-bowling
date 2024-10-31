@@ -7,7 +7,7 @@ import { navLinksArray } from "./data/NavItems";
 export default function TheHeader() {
   return (
     <header className="fixed bg-black bg-opacity-75 top-0 flex flex-row w-full z-50">
-      <nav className="w-full m-5 flex flex-row justify-between items-center px-2">
+      <nav className="w-full m-2 flex flex-row justify-between items-center px-2">
         <Link href="/">
           <Image
             src={clutchLogo}
