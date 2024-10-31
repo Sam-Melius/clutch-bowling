@@ -9,7 +9,7 @@ export default function LaneEffectCard({ effectData }) {
   useEffect(() => {
     let hoverTimeout;
     if (isHovering) {
-      hoverTimeout = setTimeout(() => setIsVideoPlaying(true), 500); // 0.5-second delay
+      hoverTimeout = setTimeout(() => setIsVideoPlaying(true), 250); // 0.5-second delay
     } else {
       clearTimeout(hoverTimeout);
       setIsVideoPlaying(false);
@@ -47,7 +47,7 @@ export default function LaneEffectCard({ effectData }) {
           <Image
             src={effectData.imageUrl}
             alt={effectData.name}
-            className="w-full h-full object-cover rounded-lg cursor-pointer hover:ring-4 ring-cyan-300 ring-offset-2"
+            className="w-full h-full object-cover rounded-lg cursor-pointer hover:ring-4 ring-secondaryBlue ring-offset-2"
             placeholder="blur"
             blurDataURL={effectData.blurDataUrl}
             height={effectData.height}
