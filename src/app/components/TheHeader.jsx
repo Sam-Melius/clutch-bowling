@@ -12,7 +12,7 @@ export default function TheHeader() {
           <Image
             src={clutchLogo}
             alt="Clutch Bowling"
-            className="w-[85px] h-auto hover:ring-4 ring-secondaryBlue ring-offset-2 rounded-full p-2"
+            className="w-[85px] h-auto hover:ring-4 ring-secondaryBlue ring-offset-2 rounded-full p-1"
             priority
           />
         </Link>
@@ -33,3 +33,5 @@ export default function TheHeader() {
     </header>
   );
 }
+
+
