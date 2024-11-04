@@ -25,7 +25,7 @@ export default function BallEffectCard({ effectData }) {
 
   return (
     <figure
-      className="flex flex-col gap-2 relative transition ease-in-out delay-150 duration-300 pb-10 h-[200] md:h-[250px]"
+      className="flex flex-col gap-2 relative transition ease-in-out delay-150 duration-300 pb-10 h-[200] md:h-[300px] md:w-[150px]"
       data-aos="fade-up"
       data-aos-duration="700"
       data-aos-once="true"
@@ -40,7 +40,7 @@ export default function BallEffectCard({ effectData }) {
           autoPlay
           muted
           onEnded={() => setIsVideoPlaying(false)}
-          className="h-full w-full object-cover rounded-md"
+          className="h-full w-full object-cover rounded-lg cursor-pointer"
           height={effectData.height}
           width={effectData.width}
         />
