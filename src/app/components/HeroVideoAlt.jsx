@@ -18,7 +18,7 @@ export default function HeroVideoAlt({
         autoPlay
         muted
         loop
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover contrast-75 brightness-200"
         preload="auto"
         playsInline
       >
@@ -29,7 +29,7 @@ export default function HeroVideoAlt({
       <div className="absolute -z-30 w-full h-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 place-items-center bg-primaryDark"></div>
 
       <div className="absolute grid h-full w-full">
-        <HeadingAndBreadcrumbs pageHeading={breadcrumbHeading} />
+        {/* <HeadingAndBreadcrumbs pageHeading={breadcrumbHeading} /> */}
         <div className="grid w-full md:w-2/3 lg:w-1/2 place-items-end justify-items-start px-5 py-10 md:p-10">
           <div
             className="col-span-full flex flex-col gap-5"
