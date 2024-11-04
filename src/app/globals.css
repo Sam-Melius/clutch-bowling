@@ -151,6 +151,6 @@ main {
   video:fullscreen {
     width: 50vw;  /* Full viewport width */
     height: 100vh; /* Full viewport height */
-    object-fit: contain; /* Ensure the video covers the screen fully */
+    object-fit: contain;
   }
 }
