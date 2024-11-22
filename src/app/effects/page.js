@@ -53,6 +53,8 @@ export default async function EffectsPage() {
   }
 `);
 
+//nothing
+
   const laneData = data.laneEffects;
   const ballData = data.ballEffects;
 
