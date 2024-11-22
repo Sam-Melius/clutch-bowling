@@ -16,7 +16,7 @@ export default function BowlingCenterCard({ center, viewMode }) {
               {center.name}
             </p>
           </div>
-          <div className=" border-gray-500 marker:flex flex-col gap-1">
+          <div className="border-gray-500 marker:flex flex-col gap-1">
             <p className="text-gray-500 uppercase text-xs">Location</p>
             <p className="text-white text-lg">{center.location}</p>
           </div>
@@ -58,7 +58,6 @@ export default function BowlingCenterCard({ center, viewMode }) {
           </div>
         </div>
         <div className="w-full lg:w-2/5 flex flex-col gap-2 justify-between">
-          
           <Image
             src={center.imageUrl}
             alt={center.name}

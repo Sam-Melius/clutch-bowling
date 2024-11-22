@@ -34,20 +34,20 @@ export const metadata = {
 export default async function PricingPage() {
   const data = await client.fetch(`
   {
-    "standardTier": *[_type == "pricing" && tier == "Standard"]{
+    "financeTier": *[_type == "pricing" && tier == "Finance"]{
       tier,
       startingPrice,
       bulletPoints
     },
-    "premiumTier": *[_type == "pricing" && tier == "Premium"]{
+    "buyoutTier": *[_type == "pricing" && tier == "Buyout"]{
       tier,
       startingPrice,
       bulletPoints
     }
   }`);
 
-  const standardTier = data?.standardTier[0];
-  const premiumTier = data?.premiumTier[0];
+  const financeTier = data?.financeTier[0];
+  const buyoutTier = data?.buyoutTier[0];
 
   return (
     <main>
@@ -66,8 +66,8 @@ export default async function PricingPage() {
           </h3>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
-            <PricingCard pricingData={standardTier} />
-            <PricingCard pricingData={premiumTier} />
+            <PricingCard pricingData={financeTier} />
+            <PricingCard pricingData={buyoutTier} />
           </div>
         </div>
       </section>

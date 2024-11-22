@@ -58,7 +58,7 @@ export default function AllFeaturesSection() {
             variant="large"
             icon={<FaBowlingBall />}
             title="Ball Effects"
-            content="Ever wanted to throw a fireball down the lane? Well that's exactly what our ball effects allow you to do. From escorting the ball with airships to shooting cannons at pirate ships, or ball effects provide a whole new level of interaction while bowling."
+            content="Ever wanted to throw a fireball down the lane? Well that's exactly what our ball effects allow you to do. From escorting the ball with airships to shooting cannons at pirate ships, our ball effects provide a whole new level of interaction while bowling."
           />
           <FeatureCard
             variant="large"
