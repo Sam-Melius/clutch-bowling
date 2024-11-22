@@ -20,6 +20,7 @@ module.exports = {
           800: "var(--clutchBlue-800)",
           900: "var(--clutchBlue-900)",
         },
+        cardBackground: "var(--cardBackground)",
         primaryDark: "#181818",
         primaryBlue: "var(--primaryBlue)",
         secondaryBlue: "var(--secondaryBlue)"

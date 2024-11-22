@@ -7,7 +7,7 @@ export default function BowlingCenterCard({ center, viewMode }) {
   if (viewMode === "grid") {
     return (
       <div
-        className={`flex flex-col lg:flex-row items-start justify-start gap-5 border border-gray-600 hover:border-gray-200 hover:bg-gray-500/20 transition-all duration-500 rounded-lg p-5 bg-transparent custom-backdrop-blur-lg w-full h-full bg-slate-800`}
+        className={`bg-cardBackground flex flex-col lg:flex-row items-start justify-start gap-5 border border-gray-600 hover:border-gray-200 hover:bg-gray-500/20 transition-all duration-500 rounded-lg p-5 bg-transparent custom-backdrop-blur-lg w-full h-full`}
       >
         <div className="w-full lg:w-3/5 flex flex-col gap-5">
           <div className=" border-gray-500 flex flex-col gap-1">

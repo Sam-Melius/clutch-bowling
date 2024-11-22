@@ -22,7 +22,8 @@
   --clutchBlue-800: #2a96e0;
   --clutchBlue-900: #118ad7;
   --primaryBlue: rgb(15 23 42);
-  --secondaryBlue: rgb(56 189 248)
+  --secondaryBlue: rgb(56 189 248);
+  --cardBackground: rgb(51, 65, 85);
 }
 
 body {

@@ -43,7 +43,7 @@ export default function CentersView({ centerData }) {
               key={index}
               className={`${viewMode === "list" ? "flex flex-col w-full" : ""}`}
             >
-              <BowlingCenterCard center={center} viewMode={viewMode} />
+              <BowlingCenterCard center={center} viewMode={viewMode}/>
             </div>
           ))}
         </div>
