@@ -58,7 +58,7 @@ export default function BowlingCenterCard({ center, viewMode }) {
           </div>
         </div>
         <div className="w-full lg:w-2/5 flex flex-col gap-2 justify-between">
-          <p className="text-gray-500 uppercase text-xs">Logo</p>
+          
           <Image
             src={center.imageUrl}
             alt={center.name}
