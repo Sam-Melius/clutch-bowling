@@ -5,20 +5,39 @@ import { useEffect, useState } from "react";
 export default function LaneEffectCard({ effectData }) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
+  const [videoSrc, setVideoSrc] = useState(null);
 
   useEffect(() => {
     let hoverTimeout;
+  
     if (isHovering) {
-      hoverTimeout = setTimeout(() => setIsVideoPlaying(true), 250); // 0.5-second delay
+      hoverTimeout = setTimeout(() => {
+        console.log("Hovering: setting video source and playing video");
+        console.log("Effect data for video:", effectData);
+        setVideoSrc(effectData.video); // Dynamically fetch the video source
+        setIsVideoPlaying(true); // Start playing the video
+      }, 250); // 0.25-second delay
     } else {
       clearTimeout(hoverTimeout);
-      setIsVideoPlaying(false);
+      console.log("Not hovering: clearing video source and stopping video");
+      setIsVideoPlaying(false); // Stop playing the video
+      setVideoSrc(null); // Clear the video source
     }
+  
     return () => clearTimeout(hoverTimeout);
-  }, [isHovering]);
+  }, [isHovering, effectData.video]);
+  
+  // Additional Debugging: Log state changes
+  useEffect(() => {
+    console.log("Hover state:", isHovering);
+    console.log("Video source being set:", videoSrc);
+    console.log("Is video playing:", isVideoPlaying);
+  }, [isHovering, videoSrc, isVideoPlaying]);
 
   const handleImageClick = () => {
-    if (window.innerWidth <= 768) { // Activate on click only for mobile
+    if (window.innerWidth <= 768) {
+      // Activate video on click for mobile
+      setVideoSrc(effectData.video);
       setIsVideoPlaying(true);
     }
   };
@@ -32,17 +51,22 @@ export default function LaneEffectCard({ effectData }) {
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
-      <div className="w-full h-[200px] md:h-[300px]"> {/* Adjust height here to match effectData */}
-        {isVideoPlaying ? (
+      <div className="w-full h-[200px] md:h-[300px]"> {/* Adjust height here */}
+        {isVideoPlaying && videoSrc ? (
           <video
-            id="effectsVideo"
-            src={effectData.video}
-            controls
-            autoPlay
-            muted
-            onEnded={() => setIsVideoPlaying(false)} // Set video to revert to image after ending
-            className="w-full h-full object-cover rounded-lg cursor-pointer"
-          />
+          id="effectsVideo"
+          src={videoSrc}
+          controls
+          autoPlay
+          muted
+          onEnded={() => setIsVideoPlaying(false)} // Reset after playback
+          onError={(e) => {
+            console.error("Video failed to load:", e);
+            setIsVideoPlaying(false); // Reset state
+            setVideoSrc(null); // Clear source
+          }}
+          className="w-full h-full object-cover rounded-lg cursor-pointer"
+        />
         ) : (
           <Image
             src={effectData.imageUrl}
