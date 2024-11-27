@@ -21,7 +21,7 @@ export default function BallEffectCard({ effectData }) {
       clearTimeout(hoverTimeout);
       console.log("Not hovering: clearing video source and stopping video");
       setIsVideoPlaying(false); // Stop playing the video
-      setVideoSrc(null); // Clear the video source
+      setVideoSrc(null);
     }
   
     return () => clearTimeout(hoverTimeout);
