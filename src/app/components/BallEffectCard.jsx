@@ -5,20 +5,39 @@ import { useEffect, useState } from "react";
 export default function BallEffectCard({ effectData }) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
+  const [videoSrc, setVideoSrc] = useState(null);
 
   useEffect(() => {
     let hoverTimeout;
+  
     if (isHovering) {
-      hoverTimeout = setTimeout(() => setIsVideoPlaying(true), 500); // 0.5-second delay
+      hoverTimeout = setTimeout(() => {
+        console.log("Hovering: setting video source and playing video");
+        console.log("Effect data for video:", effectData);
+        setVideoSrc(effectData.video); // Dynamically fetch the video source
+        setIsVideoPlaying(true); // Start playing the video
+      }, 250); // 0.25-second delay
     } else {
       clearTimeout(hoverTimeout);
-      setIsVideoPlaying(false);
+      console.log("Not hovering: clearing video source and stopping video");
+      setIsVideoPlaying(false); // Stop playing the video
+      setVideoSrc(null); // Clear the video source
     }
+  
     return () => clearTimeout(hoverTimeout);
-  }, [isHovering]);
+  }, [isHovering, effectData.video]);
+  
+  // Additional Debugging: Log state changes
+  useEffect(() => {
+    console.log("Hover state:", isHovering);
+    console.log("Video source being set:", videoSrc);
+    console.log("Is video playing:", isVideoPlaying);
+  }, [isHovering, videoSrc, isVideoPlaying]);
 
   const handleImageClick = () => {
-    if (window.innerWidth <= 768) { // Activate on click only for mobile
+    if (window.innerWidth <= 768) {
+      // Activate video on click for mobile
+      setVideoSrc(effectData.video);
       setIsVideoPlaying(true);
     }
   };
