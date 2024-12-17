@@ -33,6 +33,7 @@ export const metadata = {
   ],
 };
 
+
 export default async function ClutchCentersPage() {
   const centerData = await client.fetch(`
     *[_type == "centers"]{
@@ -67,7 +68,6 @@ export default async function ClutchCentersPage() {
           <CentersView centerData={centerData} />
         </div>
       </section>
-
 
       <TrianglesSection
         heading="Interested in becoming a Clutch Bowling Center?"

@@ -27,11 +27,9 @@ export default function BallEffectCard({ effectData }) {
     return () => clearTimeout(hoverTimeout);
   }, [isHovering, effectData.video]);
   
-  // Additional Debugging: Log state changes
+  
   useEffect(() => {
-    console.log("Hover state:", isHovering);
-    console.log("Video source being set:", videoSrc);
-    console.log("Is video playing:", isVideoPlaying);
+    
   }, [isHovering, videoSrc, isVideoPlaying]);
 
   const handleImageClick = () => {
