@@ -34,12 +34,12 @@ export const metadata = {
 export default async function PricingPage() {
   const data = await client.fetch(`
   {
-    "financeTier": *[_type == "pricing" && tier == "Finance"]{
+    "financeTier": *[_type == "pricing" && tier == "Pay Over Time"]{
       tier,
       startingPrice,
       bulletPoints
     },
-    "buyoutTier": *[_type == "pricing" && tier == "Buyout"]{
+    "buyoutTier": *[_type == "pricing" && tier == "One Time Payment"]{
       tier,
       startingPrice,
       bulletPoints
