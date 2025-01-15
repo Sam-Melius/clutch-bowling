@@ -9,6 +9,7 @@ export default function PricingCard({ pricingData }) {
         data-aos-duration="1000"
         data-aos-once="true"
       >
+        
         <div className="border-b border-gray-600 pb-2">
           <h5 className="text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl font-medium text-clutchBlue-300">
             {pricingData.tier}
@@ -17,7 +18,7 @@ export default function PricingCard({ pricingData }) {
 
         <div className="border-b border-gray-600 pb-3">
           <p className="text-lg lg:text-xl">
-            Starting at &#36;{pricingData.startingPrice} per lane
+            {pricingData.startingPrice}
           </p>
         </div>
 

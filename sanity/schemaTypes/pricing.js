@@ -12,7 +12,7 @@ export default {
     {
       name: "startingPrice",
       title: "Starting Price",
-      type: "number",
+      type: "string",
       validation: (rule) => rule.required(),
     },
     {
