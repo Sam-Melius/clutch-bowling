@@ -38,7 +38,8 @@ export default function BallEffectCard({ effectData }) {
   const handleImageClick = () => {
     if (window.innerWidth <= 768) {
       // Activate video on click for mobile
-      setVideoSrc(effectData.video);
+      setVideoSrc(`${effectData.video}?t=${new Date().getTime()}`);
+
       setIsVideoPlaying(true);
     }
   };
@@ -52,7 +53,7 @@ export default function BallEffectCard({ effectData }) {
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
-      <div className="w-full h-[200px] md:h-[300px]"> {/* Adjust height here */}
+      
 
       {isVideoPlaying && videoSrc ? (
         <video
@@ -83,8 +84,8 @@ export default function BallEffectCard({ effectData }) {
           onClick={handleImageClick}
         />
       )}
-      </div>
       
+
       <figcaption className="flex flex-col self-center font-medium md:text-lg">
         {effectData.name}
       </figcaption>
