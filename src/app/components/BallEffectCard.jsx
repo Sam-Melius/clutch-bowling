@@ -62,7 +62,6 @@ export default function BallEffectCard({ effectData }) {
           controls
           autoPlay
           muted
-          playsInline
           onEnded={() => setIsVideoPlaying(false)}
           className="h-full w-full object-cover rounded-lg cursor-pointer"
           onError={(e) => {
