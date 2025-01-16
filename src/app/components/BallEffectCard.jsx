@@ -52,6 +52,8 @@ export default function BallEffectCard({ effectData }) {
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
+      <div className="w-full h-[200px] md:h-[300px]"> {/* Adjust height here */}
+
       {isVideoPlaying && videoSrc ? (
         <video
           id="effectsVideo"
@@ -59,6 +61,7 @@ export default function BallEffectCard({ effectData }) {
           controls
           autoPlay
           muted
+          playsInline
           onEnded={() => setIsVideoPlaying(false)}
           className="h-full w-full object-cover rounded-lg cursor-pointer"
           onError={(e) => {
@@ -80,6 +83,8 @@ export default function BallEffectCard({ effectData }) {
           onClick={handleImageClick}
         />
       )}
+      </div>
+      
       <figcaption className="flex flex-col self-center font-medium md:text-lg">
         {effectData.name}
       </figcaption>
