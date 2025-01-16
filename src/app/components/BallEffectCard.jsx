@@ -84,7 +84,6 @@ export default function BallEffectCard({ effectData }) {
           onClick={handleImageClick}
         />
       )}
-      
 
       <figcaption className="flex flex-col self-center font-medium md:text-lg">
         {effectData.name}
