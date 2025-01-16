@@ -1,11 +1,13 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 export default function LaneEffectCard({ effectData }) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [videoSrc, setVideoSrc] = useState(null);
+
+  const videoSource = useMemo(() => effectData.video, [effectData]);
 
   useEffect(() => {
     let hoverTimeout;
@@ -13,19 +15,20 @@ export default function LaneEffectCard({ effectData }) {
     if (isHovering) {
       hoverTimeout = setTimeout(() => {
         console.log("Hovering: setting video source and playing video");
-        console.log("Effect data for video:", effectData);
-        setVideoSrc(effectData.video); // Dynamically fetch the video source
+        console.log("Effect data for video:", videoSource);
+        setVideoSrc(videoSource); // Dynamically fetch the video source
         setIsVideoPlaying(true); // Start playing the video
       }, 250); // 0.25-second delay
     } else {
       clearTimeout(hoverTimeout);
       console.log("Not hovering: clearing video source and stopping video");
       setIsVideoPlaying(false); // Stop playing the video
-      setVideoSrc(null); // Clear the video source
+      setVideoSrc(null);
     }
   
     return () => clearTimeout(hoverTimeout);
-  }, [isHovering, effectData.video]);
+  }, [isHovering, videoSource]);
+  
   
   // Additional Debugging: Log state changes
   useEffect(() => {
