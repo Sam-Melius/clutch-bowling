@@ -11,10 +11,10 @@ export const navLinksArray = [
     text: "Training",
     linkTo: "/training",
   },
-  {
-    text: "Pricing",
-    linkTo: "/pricing",
-  },
+  // {
+  //   text: "Pricing",
+  //   linkTo: "/pricing",
+  // },
   {
     text: "FAQs",
     linkTo: "/frequently-asked-questions",
@@ -38,10 +38,10 @@ export const footerNavLinks = [
     text: "Training",
     linkTo: "/training",
   },
-  {
-    text: "Pricing",
-    linkTo: "/pricing",
-  },
+  // {
+  //   text: "Pricing",
+  //   linkTo: "/pricing",
+  // },
   {
     text: "FAQs",
     linkTo: "/frequently-asked-questions",
