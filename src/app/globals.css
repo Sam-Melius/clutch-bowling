@@ -148,10 +148,39 @@ main {
   }
 }
 
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInDelay {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @layer utilities {
   video:fullscreen {
     width: 50vw;  /* Full viewport width */
     height: 100vh; /* Full viewport height */
     object-fit: contain;
+  }
+  .animate-fadeInScale {
+    animation: fadeInScale 0.3s ease-out forwards;
+  }
+  .animate-fadeInDelay {
+    animation: fadeInDelay 0.8s ease-out 1s forwards;
+    opacity: 0; /* ensures it starts hidden */
   }
 }
