@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa6";
 import LinkButton from "./Buttons/LinkButton";
+import ModalForm from "../components/ModalForm";
 
 export default function HeroVideo() {
   return (
@@ -37,6 +38,17 @@ export default function HeroVideo() {
             />
           </div>
         </div>
+{/* Desktop: bottom-right inside Hero */}
+<div className="hidden sm:block absolute bottom-6 right-6 z-30 animate-fadeInDelay">
+  <ModalForm />
+</div>
+
+{/* Mobile: centered below all Hero content */}
+<div className="block sm:hidden w-full mt-6 text-center z-0 animate-fadeInDelay">
+  <ModalForm />
+</div>
+
+
       </div>
     </section>
   );
