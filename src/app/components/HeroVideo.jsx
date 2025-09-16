@@ -39,14 +39,14 @@ export default function HeroVideo() {
           </div>
         </div>
 {/* Desktop: bottom-right inside Hero */}
-<div className="hidden sm:block absolute bottom-6 right-6 z-30 animate-fadeInDelay">
+{/* <div className="hidden sm:block absolute bottom-6 right-6 z-30 animate-fadeInDelay">
   <ModalForm />
-</div>
+</div> */}
 
 {/* Mobile: centered below all Hero content */}
-<div className="block sm:hidden w-full mt-6 text-center z-0 animate-fadeInDelay">
+{/* <div className="block sm:hidden w-full mt-6 text-center z-0 animate-fadeInDelay">
   <ModalForm />
-</div>
+</div> */}
 
 
       </div>
