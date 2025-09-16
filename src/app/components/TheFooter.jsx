@@ -50,7 +50,7 @@ export default function TheFooter() {
             target="_blank"
             className="hover-underline"
           >
-            503-779-7796
+            888-556-4555
           </a>
         </div>
         <div className="flex flex-col gap-1">
