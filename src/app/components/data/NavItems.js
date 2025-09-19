@@ -19,10 +19,10 @@ export const navLinksArray = [
     text: "FAQs",
     linkTo: "/frequently-asked-questions",
   },
-  // {
-  //   text: "Audio Solutions",
-  //   linkTo: "/audio",
-  // },
+  {
+    text: "Audio Solutions",
+    linkTo: "/audio",
+  },
   {
     text: "Contact Us",
     linkTo: "/contact",
@@ -50,10 +50,10 @@ export const footerNavLinks = [
     text: "FAQs",
     linkTo: "/frequently-asked-questions",
   },
-  // {
-  //   text: "Audio Solutions",
-  //   linkTo: "/audio",
-  // },
+  {
+    text: "Audio Solutions",
+    linkTo: "/audio",
+  },
   {
     text: "Patch Notes",
     linkTo: "/patch-notes",
