@@ -23,6 +23,10 @@ export const navLinksArray = [
     text: "Audio Solutions",
     linkTo: "/audio",
   },
+      {
+    text: "MSP Services",
+    linkTo: "/msp",
+  },
   {
     text: "Contact Us",
     linkTo: "/contact",
@@ -53,6 +57,10 @@ export const footerNavLinks = [
   {
     text: "Audio Solutions",
     linkTo: "/audio",
+  },
+    {
+    text: "MSP Services",
+    linkTo: "/msp",
   },
   {
     text: "Patch Notes",

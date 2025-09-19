@@ -2,7 +2,7 @@ import HeroVideoAlt from "../components/HeroVideoAlt";
 import TrianglesSection from "../components/TrianglesSection";
 import AudioFeaturesSection from "../components/AudioFeaturesSection";
 
-export default function AboutPage() {
+export default function AudioPage() {
   return (
     <main>
       <HeroVideoAlt
