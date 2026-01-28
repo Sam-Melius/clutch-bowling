@@ -67,7 +67,7 @@ export default function TheFooter() {
           <Link href="/terms" className="font-medium hover-underline">
             Terms & Conditions
           </Link>
-          <p>© 2024 Clutch Bowling. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Clutch Bowling. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
